@@ -1,0 +1,200 @@
+\doxysection{ansi.\+h}
+\hypertarget{ansi_8h_source}{}\label{ansi_8h_source}\index{D:/RiderProjects/ANSI Escape Codes/ANSI/include/ansi.h@{D:/RiderProjects/ANSI Escape Codes/ANSI/include/ansi.h}}
+\mbox{\hyperlink{ansi_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#define\ ESC\ "{}\(\backslash\)x1b["{}}}
+\DoxyCodeLine{00011\ }
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#if\ !defined(\_ANSI\_CSI)\ \&\&\ !defined(\_ANSI\_SGR)}}
+\DoxyCodeLine{00014\ \textcolor{preprocessor}{\#define\ \_ANSI\_CSI}}
+\DoxyCodeLine{00015\ }
+\DoxyCodeLine{00017\ \textcolor{preprocessor}{\#define\ \_ANSI\_SGR}}
+\DoxyCodeLine{00018\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00019\ }
+\DoxyCodeLine{00020\ \textcolor{preprocessor}{\#ifdef\ \_ANSI\_CSI}}
+\DoxyCodeLine{00021\ }
+\DoxyCodeLine{00025\ \textcolor{preprocessor}{\#define\ CUU(n)\ ESC\ \#n\ "{}A"{}}}
+\DoxyCodeLine{00026\ }
+\DoxyCodeLine{00030\ \textcolor{preprocessor}{\#define\ CUD(n)\ ESC\ \#n\ "{}B"{}}}
+\DoxyCodeLine{00031\ }
+\DoxyCodeLine{00035\ \textcolor{preprocessor}{\#define\ CUF(n)\ ESC\ \#n\ "{}C"{}}}
+\DoxyCodeLine{00036\ }
+\DoxyCodeLine{00040\ \textcolor{preprocessor}{\#define\ CUB(n)\ ESC\ \#n\ "{}D"{}}}
+\DoxyCodeLine{00041\ }
+\DoxyCodeLine{00042\ }
+\DoxyCodeLine{00047\ \textcolor{preprocessor}{\#define\ CNL(n)\ ESC\ \#n\ "{}E"{}}}
+\DoxyCodeLine{00048\ }
+\DoxyCodeLine{00053\ \textcolor{preprocessor}{\#define\ CPL(n)\ ESC\ \#n\ "{}F"{}}}
+\DoxyCodeLine{00054\ }
+\DoxyCodeLine{00055\ }
+\DoxyCodeLine{00060\ \textcolor{preprocessor}{\#define\ CHA(n)\ ESC\ \#n\ "{}G"{}}}
+\DoxyCodeLine{00061\ }
+\DoxyCodeLine{00066\ \textcolor{preprocessor}{\#define\ CUP(n,\ m)\ ESC\ \#n\ "{};"{}\ \#m\ "{}H"{}}}
+\DoxyCodeLine{00067\ }
+\DoxyCodeLine{00072\ \textcolor{preprocessor}{\#define\ HVP(n,\ m)\ ESC\ \#n\ "{};"{}\ \#m\ "{}f"{}}}
+\DoxyCodeLine{00073\ }
+\DoxyCodeLine{00074\ }
+\DoxyCodeLine{00078\ \textcolor{preprocessor}{\#define\ ED(n)\ ESC\ \#n\ "{}J"{}}}
+\DoxyCodeLine{00079\ }
+\DoxyCodeLine{00083\ \textcolor{preprocessor}{\#define\ EL(n)\ ESC\ \#n\ "{}K"{}}}
+\DoxyCodeLine{00084\ }
+\DoxyCodeLine{00085\ }
+\DoxyCodeLine{00090\ \textcolor{preprocessor}{\#define\ SU(n)\ ESC\ \#n\ "{}S"{}}}
+\DoxyCodeLine{00091\ }
+\DoxyCodeLine{00096\ \textcolor{preprocessor}{\#define\ SD(n)\ ESC\ \#n\ "{}T"{}}}
+\DoxyCodeLine{00097\ }
+\DoxyCodeLine{00098\ }
+\DoxyCodeLine{00101\ \textcolor{preprocessor}{\#define\ DSR\ ESC\ "{}6n"{}}}
+\DoxyCodeLine{00102\ }
+\DoxyCodeLine{00105\ \textcolor{preprocessor}{\#define\ SCP\ ESC\ "{}s"{}}}
+\DoxyCodeLine{00106\ }
+\DoxyCodeLine{00109\ \textcolor{preprocessor}{\#define\ RCP\ ESC\ "{}u"{}}}
+\DoxyCodeLine{00110\ }
+\DoxyCodeLine{00111\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00112\ }
+\DoxyCodeLine{00113\ }
+\DoxyCodeLine{00117\ \textcolor{preprocessor}{\#define\ SGR(n)\ ESC\ \#n\ "{}m"{}}}
+\DoxyCodeLine{00118\ }
+\DoxyCodeLine{00119\ }
+\DoxyCodeLine{00120\ \textcolor{preprocessor}{\#ifdef\ \_ANSI\_SGR}}
+\DoxyCodeLine{00121\ }
+\DoxyCodeLine{00124\ \textcolor{preprocessor}{\#define\ RESET\ SGR(0)}}
+\DoxyCodeLine{00125\ }
+\DoxyCodeLine{00128\ \textcolor{preprocessor}{\#define\ BOLD\ SGR(1)}}
+\DoxyCodeLine{00129\ }
+\DoxyCodeLine{00132\ \textcolor{preprocessor}{\#define\ FAINT\ SGR(2)}}
+\DoxyCodeLine{00133\ }
+\DoxyCodeLine{00135\ \textcolor{preprocessor}{\#define\ ITALIC\ SGR(3)}}
+\DoxyCodeLine{00136\ }
+\DoxyCodeLine{00138\ \textcolor{preprocessor}{\#define\ UNDERLINE\ SGR(4)}}
+\DoxyCodeLine{00139\ }
+\DoxyCodeLine{00142\ \textcolor{preprocessor}{\#define\ BLINK\ SGR(5)}}
+\DoxyCodeLine{00143\ }
+\DoxyCodeLine{00147\ \textcolor{preprocessor}{\#define\ RAPID\_BLINK\ SGR(6)}}
+\DoxyCodeLine{00148\ }
+\DoxyCodeLine{00152\ \textcolor{preprocessor}{\#define\ INVERT\ SGR(7)}}
+\DoxyCodeLine{00153\ }
+\DoxyCodeLine{00156\ \textcolor{preprocessor}{\#define\ HIDE\ SGR(8)}}
+\DoxyCodeLine{00157\ }
+\DoxyCodeLine{00160\ \textcolor{preprocessor}{\#define\ STRIKE\ SGR(9)}}
+\DoxyCodeLine{00161\ }
+\DoxyCodeLine{00164\ \textcolor{preprocessor}{\#define\ DOUBLE\_UNDERLINE\ SGR(21)}}
+\DoxyCodeLine{00165\ }
+\DoxyCodeLine{00168\ \textcolor{preprocessor}{\#define\ OVERLINE\ SGR(53)}}
+\DoxyCodeLine{00169\ }
+\DoxyCodeLine{00170\ }
+\DoxyCodeLine{00173\ \textcolor{preprocessor}{\#define\ NORMAL\ SGR(22)}}
+\DoxyCodeLine{00174\ }
+\DoxyCodeLine{00176\ }
+\DoxyCodeLine{00179\ \textcolor{preprocessor}{\#define\ UN\_UNDERLINE\ SGR(24)}}
+\DoxyCodeLine{00180\ }
+\DoxyCodeLine{00182\ \textcolor{preprocessor}{\#define\ UN\_BLINK\ SGR(25)}}
+\DoxyCodeLine{00183\ }
+\DoxyCodeLine{00185\ \textcolor{preprocessor}{\#define\ UN\_INVERT\ SGR(27)}}
+\DoxyCodeLine{00186\ }
+\DoxyCodeLine{00188\ \textcolor{preprocessor}{\#define\ REVERT\ SGR(27)}}
+\DoxyCodeLine{00189\ }
+\DoxyCodeLine{00191\ \textcolor{preprocessor}{\#define\ UN\_HIDE\ SGR(28)}}
+\DoxyCodeLine{00192\ }
+\DoxyCodeLine{00194\ \textcolor{preprocessor}{\#define\ REVEAL\ SGR(28)}}
+\DoxyCodeLine{00195\ }
+\DoxyCodeLine{00197\ \textcolor{preprocessor}{\#define\ UN\_STRIKE\ SGR(29)}}
+\DoxyCodeLine{00198\ }
+\DoxyCodeLine{00201\ \textcolor{preprocessor}{\#define\ UN\_OVERLINE\ SGR(55)}}
+\DoxyCodeLine{00202\ }
+\DoxyCodeLine{00203\ }
+\DoxyCodeLine{00204\ \textcolor{preprocessor}{\#pragma\ region\ Colors}}
+\DoxyCodeLine{00205\ }
+\DoxyCodeLine{00207\ \textcolor{preprocessor}{\#define\ FG\_BLACK\ SGR(30)}}
+\DoxyCodeLine{00208\ }
+\DoxyCodeLine{00210\ \textcolor{preprocessor}{\#define\ FG\_RED\ SGR(31)}}
+\DoxyCodeLine{00211\ }
+\DoxyCodeLine{00213\ \textcolor{preprocessor}{\#define\ FG\_GREEN\ SGR(32)}}
+\DoxyCodeLine{00214\ }
+\DoxyCodeLine{00216\ \textcolor{preprocessor}{\#define\ FG\_YELLOW\ SGR(33)}}
+\DoxyCodeLine{00217\ }
+\DoxyCodeLine{00219\ \textcolor{preprocessor}{\#define\ FG\_BLUE\ SGR(34)}}
+\DoxyCodeLine{00220\ }
+\DoxyCodeLine{00222\ \textcolor{preprocessor}{\#define\ FG\_MAGENTA\ SGR(35)}}
+\DoxyCodeLine{00223\ }
+\DoxyCodeLine{00225\ \textcolor{preprocessor}{\#define\ FG\_CYAN\ SGR(36)}}
+\DoxyCodeLine{00226\ }
+\DoxyCodeLine{00228\ \textcolor{preprocessor}{\#define\ FG\_WHITE\ SGR(37)}}
+\DoxyCodeLine{00229\ }
+\DoxyCodeLine{00231\ \textcolor{preprocessor}{\#define\ FG\_GRAY\ SGR(90)}}
+\DoxyCodeLine{00232\ }
+\DoxyCodeLine{00233\ }
+\DoxyCodeLine{00235\ \textcolor{preprocessor}{\#define\ FG\_BRIGHT\_BLACK\ SGR(90)}}
+\DoxyCodeLine{00236\ }
+\DoxyCodeLine{00238\ \textcolor{preprocessor}{\#define\ FG\_BRIGHT\_RED\ SGR(91)}}
+\DoxyCodeLine{00239\ }
+\DoxyCodeLine{00241\ \textcolor{preprocessor}{\#define\ FG\_BRIGHT\_GREEN\ SGR(92)}}
+\DoxyCodeLine{00242\ }
+\DoxyCodeLine{00244\ \textcolor{preprocessor}{\#define\ FG\_BRIGHT\_YELLOW\ SGR(93)}}
+\DoxyCodeLine{00245\ }
+\DoxyCodeLine{00247\ \textcolor{preprocessor}{\#define\ FG\_BRIGHT\_BLUE\ SGR(94)}}
+\DoxyCodeLine{00248\ }
+\DoxyCodeLine{00250\ \textcolor{preprocessor}{\#define\ FG\_BRIGHT\_MAGENTA\ SGR(95)}}
+\DoxyCodeLine{00251\ }
+\DoxyCodeLine{00253\ \textcolor{preprocessor}{\#define\ FG\_BRIGHT\_CYAN\ SGR(96)}}
+\DoxyCodeLine{00254\ }
+\DoxyCodeLine{00256\ \textcolor{preprocessor}{\#define\ FG\_BRIGHT\_WHITE\ SGR(97)}}
+\DoxyCodeLine{00257\ }
+\DoxyCodeLine{00258\ }
+\DoxyCodeLine{00260\ \textcolor{preprocessor}{\#define\ BG\_BLACK\ SGR(40)}}
+\DoxyCodeLine{00261\ }
+\DoxyCodeLine{00263\ \textcolor{preprocessor}{\#define\ BG\_RED\ SGR(41)}}
+\DoxyCodeLine{00264\ }
+\DoxyCodeLine{00266\ \textcolor{preprocessor}{\#define\ BG\_GREEN\ SGR(42)}}
+\DoxyCodeLine{00267\ }
+\DoxyCodeLine{00269\ \textcolor{preprocessor}{\#define\ BG\_YELLOW\ SGR(43)}}
+\DoxyCodeLine{00270\ }
+\DoxyCodeLine{00272\ \textcolor{preprocessor}{\#define\ BG\_BLUE\ SGR(44)}}
+\DoxyCodeLine{00273\ }
+\DoxyCodeLine{00275\ \textcolor{preprocessor}{\#define\ BG\_MAGENTA\ SGR(45)}}
+\DoxyCodeLine{00276\ }
+\DoxyCodeLine{00278\ \textcolor{preprocessor}{\#define\ BG\_CYAN\ SGR(46)}}
+\DoxyCodeLine{00279\ }
+\DoxyCodeLine{00281\ \textcolor{preprocessor}{\#define\ BG\_WHITE\ SGR(47)}}
+\DoxyCodeLine{00282\ }
+\DoxyCodeLine{00284\ \textcolor{preprocessor}{\#define\ BG\_GRAY\ SGR(100)}}
+\DoxyCodeLine{00285\ }
+\DoxyCodeLine{00286\ }
+\DoxyCodeLine{00288\ \textcolor{preprocessor}{\#define\ BG\_BRIGHT\_BLACK\ SGR(100)}}
+\DoxyCodeLine{00289\ }
+\DoxyCodeLine{00291\ \textcolor{preprocessor}{\#define\ BG\_BRIGHT\_RED\ SGR(101)}}
+\DoxyCodeLine{00292\ }
+\DoxyCodeLine{00294\ \textcolor{preprocessor}{\#define\ BG\_BRIGHT\_GREEN\ SGR(102)}}
+\DoxyCodeLine{00295\ }
+\DoxyCodeLine{00297\ \textcolor{preprocessor}{\#define\ BG\_BRIGHT\_YELLOW\ SGR(103)}}
+\DoxyCodeLine{00298\ }
+\DoxyCodeLine{00300\ \textcolor{preprocessor}{\#define\ BG\_BRIGHT\_BLUE\ SGR(104)}}
+\DoxyCodeLine{00301\ }
+\DoxyCodeLine{00303\ \textcolor{preprocessor}{\#define\ BG\_BRIGHT\_MAGENTA\ SGR(105)}}
+\DoxyCodeLine{00304\ }
+\DoxyCodeLine{00306\ \textcolor{preprocessor}{\#define\ BG\_BRIGHT\_CYAN\ SGR(106)}}
+\DoxyCodeLine{00307\ }
+\DoxyCodeLine{00309\ \textcolor{preprocessor}{\#define\ BG\_BRIGHT\_WHITE\ SGR(107)}}
+\DoxyCodeLine{00310\ }
+\DoxyCodeLine{00311\ }
+\DoxyCodeLine{00314\ \textcolor{preprocessor}{\#define\ FG\_SET(n)\ ESC\ "{}38;5;"{}\ \#n\ "{}m"{}}}
+\DoxyCodeLine{00315\ }
+\DoxyCodeLine{00320\ \textcolor{preprocessor}{\#define\ FG\_RGB(r,\ g,\ b)\ ESC\ "{}38;2;"{}\ \#r\ "{};"{}\ \#g\ "{};"{}\ \#b\ "{}m"{}}}
+\DoxyCodeLine{00321\ }
+\DoxyCodeLine{00322\ }
+\DoxyCodeLine{00325\ \textcolor{preprocessor}{\#define\ BG\_SET(n)\ ESC\ "{}48;5;"{}\ \#n\ "{}m"{}}}
+\DoxyCodeLine{00326\ }
+\DoxyCodeLine{00331\ \textcolor{preprocessor}{\#define\ BG\_RGB(r,\ g,\ b)\ ESC\ "{}48;2;"{}\ \#r\ "{};"{}\ \#g\ "{};"{}\ \#b\ "{}m"{}}}
+\DoxyCodeLine{00332\ }
+\DoxyCodeLine{00333\ }
+\DoxyCodeLine{00337\ \textcolor{preprocessor}{\#define\ UNDERLINE\_SET(n)\ ESC\ "{}58;5;"{}\ \#n\ "{}m"{}}}
+\DoxyCodeLine{00338\ }
+\DoxyCodeLine{00344\ \textcolor{preprocessor}{\#define\ UNDERLINE\_RGB(r,\ g,\ b)\ ESC\ "{}58;2;"{}\ \#r\ "{};"{}\ \#g\ "{};"{}\ \#b\ "{}m"{}}}
+\DoxyCodeLine{00345\ }
+\DoxyCodeLine{00346\ \textcolor{preprocessor}{\#pragma\ endregion}}
+\DoxyCodeLine{00347\ }
+\DoxyCodeLine{00348\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

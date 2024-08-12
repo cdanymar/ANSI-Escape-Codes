@@ -1,0 +1,266 @@
+\doxysection{ansi Namespace Reference}
+\hypertarget{namespaceansi}{}\label{namespaceansi}\index{ansi@{ansi}}
+
+
+ANSI Escape Codes.  
+
+
+\doxysubsubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+namespace \mbox{\hyperlink{namespaceansi_1_1manipulators_1_1bg}{bg}}
+\begin{DoxyCompactList}\small\item\em Background color. \end{DoxyCompactList}\item 
+namespace \mbox{\hyperlink{namespaceansi_1_1manipulators_1_1caret}{caret}}
+\begin{DoxyCompactList}\small\item\em Caret manipulations. \end{DoxyCompactList}\item 
+namespace \mbox{\hyperlink{namespaceansi_1_1manipulators_1_1erase}{erase}}
+\begin{DoxyCompactList}\small\item\em Erase functions. \end{DoxyCompactList}\item 
+namespace \mbox{\hyperlink{namespaceansi_1_1manipulators_1_1fg}{fg}}
+\begin{DoxyCompactList}\small\item\em Foreground color. \end{DoxyCompactList}\item 
+namespace \mbox{\hyperlink{namespaceansi_1_1manipulators_1_1line}{line}}
+\begin{DoxyCompactList}\small\item\em Line movement. \end{DoxyCompactList}\item 
+namespace \mbox{\hyperlink{namespaceansi_1_1manipulators}{manipulators}}
+\begin{DoxyCompactList}\small\item\em ANSI Escape Codes output manipulators. \end{DoxyCompactList}\item 
+namespace \mbox{\hyperlink{namespaceansi_1_1manipulators_1_1scroll}{scroll}}
+\begin{DoxyCompactList}\small\item\em Scroll functions. \end{DoxyCompactList}\item 
+namespace \mbox{\hyperlink{namespaceansi_1_1manipulators_1_1text}{text}}
+\begin{DoxyCompactList}\small\item\em Text styles. \end{DoxyCompactList}\item 
+namespace \mbox{\hyperlink{namespaceansi_1_1manipulators_1_1underline}{underline}}
+\begin{DoxyCompactList}\small\item\em Underline color. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structansi_1_1csi}{csi}}
+\begin{DoxyCompactList}\small\item\em Control Sequence Introducer. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structansi_1_1csi_3_010_01_4}{csi$<$ 0 $>$}}
+\begin{DoxyCompactList}\small\item\em CSI for a valueless sequence. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{namespaceansi_a47fab9a98312717efcc626515c474df9}\label{namespaceansi_a47fab9a98312717efcc626515c474df9} 
+using {\bfseries byte} = std\+::uint8\+\_\+t
+\begin{DoxyCompactList}\small\item\em Type alias for the smallest unsigned integer. \end{DoxyCompactList}\item 
+using \mbox{\hyperlink{namespaceansi_a449d89c1e15720bba216789591a610b4}{sgr}} = \mbox{\hyperlink{structansi_1_1csi}{csi}}$<$1$>$
+\begin{DoxyCompactList}\small\item\em Select Graphics Rendition alias for single-\/valued CSI. \end{DoxyCompactList}\item 
+using \mbox{\hyperlink{namespaceansi_a97abb535083d12bc58dab6701d83845e}{col}} = \mbox{\hyperlink{structansi_1_1csi}{csi}}$<$3$>$
+\begin{DoxyCompactList}\small\item\em Select Graphics Rendition with an 8-\/bit color alias for three-\/valued CSI. \end{DoxyCompactList}\item 
+using \mbox{\hyperlink{namespaceansi_a8455a854372433b6c7dfbd3e1d5158c9}{rgb}} = \mbox{\hyperlink{structansi_1_1csi}{csi}}$<$5$>$
+\begin{DoxyCompactList}\small\item\em Select Graphics Rendition with an RGB 24-\/bit color alias for five-\/valued CSI. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$std\+::size\+\_\+t N$>$ }\\constexpr auto \mbox{\hyperlink{namespaceansi_a890029d5f6276eda4fcb51dd23495afe}{operator$<$$<$}} (std\+::ostream \&os, const \mbox{\hyperlink{structansi_1_1csi}{csi}}$<$ N $>$ \&obj) -\/$>$ std\+::ostream \&
+\begin{DoxyCompactList}\small\item\em Creates textual ANSI escape code from a CSI object for an output stream. \end{DoxyCompactList}\item 
+{\footnotesize template$<$csi... Manips, typename... Args$>$ }\\auto \mbox{\hyperlink{namespaceansi_aa514aac9192d68882db512bb94d8e041}{ansi\+::print}} (std\+::ostream \&stream, const std\+::string\+\_\+view fmt, Args \&\&... args) -\/$>$ void
+\begin{DoxyCompactList}\small\item\em Prints ANSI-\/styled unicode to an output stream with variadic format string. \end{DoxyCompactList}\item 
+{\footnotesize template$<$csi... Manips, typename... Args$>$ }\\auto \mbox{\hyperlink{namespaceansi_a1982e62f3834ababf162b06a58638141}{ansi\+::print}} (const std\+::string\+\_\+view fmt, Args \&\&... args) -\/$>$ void
+\begin{DoxyCompactList}\small\item\em Prints ANSI-\/styled unicode to standard output stream with variadic format string. \end{DoxyCompactList}\item 
+{\footnotesize template$<$csi... Manips, typename... Args$>$ }\\auto \mbox{\hyperlink{namespaceansi_aa19620d46551622470c7d562b12b2764}{ansi\+::println}} (std\+::ostream \&stream, const std\+::string\+\_\+view fmt, Args \&\&... args) -\/$>$ void
+\begin{DoxyCompactList}\small\item\em Prints ANSI-\/styled unicode to an output stream with variadic format string; flushes the output stream and ends the line. \end{DoxyCompactList}\item 
+{\footnotesize template$<$csi... Manips, typename... Args$>$ }\\auto \mbox{\hyperlink{namespaceansi_aa9a6df8fe7cd8a9449e3a586b2b3a9a1}{ansi\+::println}} (const std\+::string\+\_\+view fmt, Args \&\&... args) -\/$>$ void
+\begin{DoxyCompactList}\small\item\em Prints ANSI-\/styled unicode to standard output stream with variadic format string; flushes the standard output stream and ends the line. \end{DoxyCompactList}\item 
+auto \mbox{\hyperlink{namespaceansi_af8c100ed9fa338ef90ab30f4890cd681}{ansi\+::println}} (std\+::ostream \&stream) -\/$>$ void
+\begin{DoxyCompactList}\small\item\em Flushes the output stream and ends the line. \end{DoxyCompactList}\item 
+\Hypertarget{namespaceansi_a7527b2a81d719b3e8d9d846675c25d16}\label{namespaceansi_a7527b2a81d719b3e8d9d846675c25d16} 
+auto {\bfseries ansi\+::println} () -\/$>$ void
+\begin{DoxyCompactList}\small\item\em Flushes the standard output stream and ends the lines. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+constexpr \mbox{\hyperlink{namespaceansi_a449d89c1e15720bba216789591a610b4}{sgr}} \mbox{\hyperlink{namespaceansi_1_1manipulators_a586520e1ead91212948053e9ac17ab08}{reset}} \{\{\}, \textquotesingle{}m\textquotesingle{}\}
+\begin{DoxyCompactList}\small\item\em Reset or normal. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+ANSI Escape Codes. 
+
+\doxysubsection{Typedef Documentation}
+\Hypertarget{namespaceansi_a97abb535083d12bc58dab6701d83845e}\index{ansi@{ansi}!col@{col}}
+\index{col@{col}!ansi@{ansi}}
+\doxysubsubsection{\texorpdfstring{col}{col}}
+{\footnotesize\ttfamily \label{namespaceansi_a97abb535083d12bc58dab6701d83845e} 
+using \mbox{\hyperlink{namespaceansi_a97abb535083d12bc58dab6701d83845e}{ansi\+::col}} = \mbox{\hyperlink{structansi_1_1csi}{csi}}$<$3$>$}
+
+
+
+Select Graphics Rendition with an 8-\/bit color alias for three-\/valued CSI. 
+
+\begin{DoxySeeAlso}{See also}
+\doxylink{structansi_1_1csi}{ansi\+::csi} 
+\end{DoxySeeAlso}
+\Hypertarget{namespaceansi_a8455a854372433b6c7dfbd3e1d5158c9}\index{ansi@{ansi}!rgb@{rgb}}
+\index{rgb@{rgb}!ansi@{ansi}}
+\doxysubsubsection{\texorpdfstring{rgb}{rgb}}
+{\footnotesize\ttfamily \label{namespaceansi_a8455a854372433b6c7dfbd3e1d5158c9} 
+using \mbox{\hyperlink{namespaceansi_a8455a854372433b6c7dfbd3e1d5158c9}{ansi\+::rgb}} = \mbox{\hyperlink{structansi_1_1csi}{csi}}$<$5$>$}
+
+
+
+Select Graphics Rendition with an RGB 24-\/bit color alias for five-\/valued CSI. 
+
+\begin{DoxySeeAlso}{See also}
+\doxylink{structansi_1_1csi}{ansi\+::csi} 
+\end{DoxySeeAlso}
+\Hypertarget{namespaceansi_a449d89c1e15720bba216789591a610b4}\index{ansi@{ansi}!sgr@{sgr}}
+\index{sgr@{sgr}!ansi@{ansi}}
+\doxysubsubsection{\texorpdfstring{sgr}{sgr}}
+{\footnotesize\ttfamily \label{namespaceansi_a449d89c1e15720bba216789591a610b4} 
+using \mbox{\hyperlink{namespaceansi_a449d89c1e15720bba216789591a610b4}{ansi\+::sgr}} = \mbox{\hyperlink{structansi_1_1csi}{csi}}$<$1$>$}
+
+
+
+Select Graphics Rendition alias for single-\/valued CSI. 
+
+\begin{DoxySeeAlso}{See also}
+\doxylink{structansi_1_1csi}{ansi\+::csi} 
+\end{DoxySeeAlso}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{namespaceansi_a890029d5f6276eda4fcb51dd23495afe}\index{ansi@{ansi}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!ansi@{ansi}}
+\doxysubsubsection{\texorpdfstring{operator$<$$<$()}{operator<<()}}
+{\footnotesize\ttfamily \label{namespaceansi_a890029d5f6276eda4fcb51dd23495afe} 
+template$<$std\+::size\+\_\+t N$>$ \\
+auto ansi\+::operator$<$$<$ (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{os}{, }\item[{const \mbox{\hyperlink{structansi_1_1csi}{csi}}$<$ N $>$ \&}]{obj}{}\end{DoxyParamCaption}) -\/$>$ std\+::ostream\&     \hspace{0.3cm}{\ttfamily [constexpr]}}
+
+
+
+Creates textual ANSI escape code from a CSI object for an output stream. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em N} & Number of values. \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ out}}  & {\em os} & Output stream. \\
+\hline
+\mbox{\texttt{ in}}  & {\em obj} & CSI object, \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The modified output steam reference. 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\doxylink{structansi_1_1csi}{ansi\+::csi} 
+\end{DoxySeeAlso}
+\Hypertarget{namespaceansi_a1982e62f3834ababf162b06a58638141}\index{ansi@{ansi}!print@{print}}
+\index{print@{print}!ansi@{ansi}}
+\doxysubsubsection{\texorpdfstring{print()}{print()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{namespaceansi_a1982e62f3834ababf162b06a58638141} 
+template$<$csi... Manips, typename... Args$>$ \\
+auto ansi\+::print (\begin{DoxyParamCaption}\item[{const std\+::string\+\_\+view}]{fmt}{, }\item[{Args \&\&...}]{args}{}\end{DoxyParamCaption}) -\/$>$ void     \hspace{0.3cm}{\ttfamily [export]}}
+
+
+
+Prints ANSI-\/styled unicode to standard output stream with variadic format string. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em Manips} & ANSI CSI output manip, styles. \\
+\hline
+{\em Args} & Variadic arguments to put in the string. \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em fmt} & Format string. \\
+\hline
+\mbox{\texttt{ in}}  & {\em args} & Variadic format arguments. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{namespaceansi_aa514aac9192d68882db512bb94d8e041}\index{ansi@{ansi}!print@{print}}
+\index{print@{print}!ansi@{ansi}}
+\doxysubsubsection{\texorpdfstring{print()}{print()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{namespaceansi_aa514aac9192d68882db512bb94d8e041} 
+template$<$csi... Manips, typename... Args$>$ \\
+auto ansi\+::print (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{stream}{, }\item[{const std\+::string\+\_\+view}]{fmt}{, }\item[{Args \&\&...}]{args}{}\end{DoxyParamCaption}) -\/$>$ void     \hspace{0.3cm}{\ttfamily [export]}}
+
+
+
+Prints ANSI-\/styled unicode to an output stream with variadic format string. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em Manips} & ANSI CSI output manip, styles. \\
+\hline
+{\em Args} & Variadic arguments to put in the string. \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ out}}  & {\em stream} & Output stream. \\
+\hline
+\mbox{\texttt{ in}}  & {\em fmt} & Format string. \\
+\hline
+\mbox{\texttt{ in}}  & {\em args} & Variadic format arguments. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{namespaceansi_aa9a6df8fe7cd8a9449e3a586b2b3a9a1}\index{ansi@{ansi}!println@{println}}
+\index{println@{println}!ansi@{ansi}}
+\doxysubsubsection{\texorpdfstring{println()}{println()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily \label{namespaceansi_aa9a6df8fe7cd8a9449e3a586b2b3a9a1} 
+template$<$csi... Manips, typename... Args$>$ \\
+auto ansi\+::println (\begin{DoxyParamCaption}\item[{const std\+::string\+\_\+view}]{fmt}{, }\item[{Args \&\&...}]{args}{}\end{DoxyParamCaption}) -\/$>$ void     \hspace{0.3cm}{\ttfamily [export]}}
+
+
+
+Prints ANSI-\/styled unicode to standard output stream with variadic format string; flushes the standard output stream and ends the line. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em Manips} & ANSI CSI output manip, styles. \\
+\hline
+{\em Args} & Variadic arguments to put in the string. \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em fmt} & Format string. \\
+\hline
+\mbox{\texttt{ in}}  & {\em args} & Variadic format arguments. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{namespaceansi_af8c100ed9fa338ef90ab30f4890cd681}\index{ansi@{ansi}!println@{println}}
+\index{println@{println}!ansi@{ansi}}
+\doxysubsubsection{\texorpdfstring{println()}{println()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily \label{namespaceansi_af8c100ed9fa338ef90ab30f4890cd681} 
+auto ansi\+::println (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{stream}{}\end{DoxyParamCaption}) -\/$>$ void \hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [export]}}
+
+
+
+Flushes the output stream and ends the line. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ out}}  & {\em stream} & Output steam. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{namespaceansi_aa19620d46551622470c7d562b12b2764}\index{ansi@{ansi}!println@{println}}
+\index{println@{println}!ansi@{ansi}}
+\doxysubsubsection{\texorpdfstring{println()}{println()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily \label{namespaceansi_aa19620d46551622470c7d562b12b2764} 
+template$<$csi... Manips, typename... Args$>$ \\
+auto ansi\+::println (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{stream}{, }\item[{const std\+::string\+\_\+view}]{fmt}{, }\item[{Args \&\&...}]{args}{}\end{DoxyParamCaption}) -\/$>$ void     \hspace{0.3cm}{\ttfamily [export]}}
+
+
+
+Prints ANSI-\/styled unicode to an output stream with variadic format string; flushes the output stream and ends the line. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em Manips} & ANSI CSI output manip, styles. \\
+\hline
+{\em Args} & Variadic arguments to put in the string. \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ out}}  & {\em stream} & Output stream. \\
+\hline
+\mbox{\texttt{ in}}  & {\em fmt} & Format string. \\
+\hline
+\mbox{\texttt{ in}}  & {\em args} & Variadic format arguments. \\
+\hline
+\end{DoxyParams}

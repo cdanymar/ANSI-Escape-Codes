@@ -1,0 +1,66 @@
+\doxysection{ansi\+::manipulators\+::underline Namespace Reference}
+\hypertarget{namespaceansi_1_1manipulators_1_1underline}{}\label{namespaceansi_1_1manipulators_1_1underline}\index{ansi::manipulators::underline@{ansi::manipulators::underline}}
+
+
+Underline color.  
+
+
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+constexpr auto \mbox{\hyperlink{namespaceansi_1_1manipulators_1_1underline_ad142449249b576ec080ce9c7db2e167f}{set}} (const \mbox{\hyperlink{namespaceansi_a47fab9a98312717efcc626515c474df9}{byte}} color) -\/$>$ \mbox{\hyperlink{namespaceansi_a97abb535083d12bc58dab6701d83845e}{col}}
+\begin{DoxyCompactList}\small\item\em Sets a custom 8-\/bit color. \end{DoxyCompactList}\item 
+constexpr auto \mbox{\hyperlink{namespaceansi_1_1manipulators_1_1underline_a298b99ffb78ff50e8ae71b0881432561}{rgb}} (const \mbox{\hyperlink{namespaceansi_a47fab9a98312717efcc626515c474df9}{byte}} red, const \mbox{\hyperlink{namespaceansi_a47fab9a98312717efcc626515c474df9}{byte}} green, const \mbox{\hyperlink{namespaceansi_a47fab9a98312717efcc626515c474df9}{byte}} blue) -\/$>$ \mbox{\hyperlink{namespaceansi_a8455a854372433b6c7dfbd3e1d5158c9}{rgb}}
+\begin{DoxyCompactList}\small\item\em Sets a custom RGB color. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{namespaceansi_1_1manipulators_1_1underline_a2d5a09f72276e32d22fa97c9b6df9bfa}\label{namespaceansi_1_1manipulators_1_1underline_a2d5a09f72276e32d22fa97c9b6df9bfa} 
+constexpr \mbox{\hyperlink{namespaceansi_a449d89c1e15720bba216789591a610b4}{sgr}} {\bfseries regular} \{\{59\}, \textquotesingle{}m\textquotesingle{}\}
+\begin{DoxyCompactList}\small\item\em Restores default color. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Underline color. 
+
+\doxysubsection{Function Documentation}
+\Hypertarget{namespaceansi_1_1manipulators_1_1underline_a298b99ffb78ff50e8ae71b0881432561}\index{ansi::manipulators::underline@{ansi::manipulators::underline}!rgb@{rgb}}
+\index{rgb@{rgb}!ansi::manipulators::underline@{ansi::manipulators::underline}}
+\doxysubsubsection{\texorpdfstring{rgb()}{rgb()}}
+{\footnotesize\ttfamily \label{namespaceansi_1_1manipulators_1_1underline_a298b99ffb78ff50e8ae71b0881432561} 
+auto ansi\+::manipulators\+::underline\+::rgb (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{namespaceansi_a47fab9a98312717efcc626515c474df9}{byte}}}]{red}{, }\item[{const \mbox{\hyperlink{namespaceansi_a47fab9a98312717efcc626515c474df9}{byte}}}]{green}{, }\item[{const \mbox{\hyperlink{namespaceansi_a47fab9a98312717efcc626515c474df9}{byte}}}]{blue}{}\end{DoxyParamCaption}) -\/$>$ \mbox{\hyperlink{namespaceansi_a8455a854372433b6c7dfbd3e1d5158c9}{rgb}} \hspace{0.3cm}{\ttfamily [constexpr]}}
+
+
+
+Sets a custom RGB color. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em red} & Red byte channel. \\
+\hline
+\mbox{\texttt{ in}}  & {\em green} & Green byte channel. \\
+\hline
+\mbox{\texttt{ in}}  & {\em blue} & Blue byte channel. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+SGR representing the RGB color. 
+\end{DoxyReturn}
+\Hypertarget{namespaceansi_1_1manipulators_1_1underline_ad142449249b576ec080ce9c7db2e167f}\index{ansi::manipulators::underline@{ansi::manipulators::underline}!set@{set}}
+\index{set@{set}!ansi::manipulators::underline@{ansi::manipulators::underline}}
+\doxysubsubsection{\texorpdfstring{set()}{set()}}
+{\footnotesize\ttfamily \label{namespaceansi_1_1manipulators_1_1underline_ad142449249b576ec080ce9c7db2e167f} 
+auto ansi\+::manipulators\+::underline\+::set (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{namespaceansi_a47fab9a98312717efcc626515c474df9}{byte}}}]{color}{}\end{DoxyParamCaption}) -\/$>$ \mbox{\hyperlink{namespaceansi_a97abb535083d12bc58dab6701d83845e}{col}} \hspace{0.3cm}{\ttfamily [constexpr]}}
+
+
+
+Sets a custom 8-\/bit color. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em color} & Color code. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+SGR representing the 8-\/bit color. 
+\end{DoxyReturn}

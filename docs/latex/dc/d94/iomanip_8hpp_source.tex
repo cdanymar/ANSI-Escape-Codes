@@ -1,0 +1,220 @@
+\doxysection{iomanip.\+hpp}
+\hypertarget{iomanip_8hpp_source}{}\label{iomanip_8hpp_source}\index{D:/RiderProjects/ANSI Escape Codes/ANSI/include/ansi/iomanip.hpp@{D:/RiderProjects/ANSI Escape Codes/ANSI/include/ansi/iomanip.hpp}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ "{}csi.hpp"{}}}
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00012\ \textcolor{keyword}{namespace\ }\mbox{\hyperlink{namespaceansi}{ansi}}}
+\DoxyCodeLine{00013\ \{}
+\DoxyCodeLine{00015\ \ \ \ \ \textcolor{keyword}{inline}\ \textcolor{keyword}{namespace\ }manipulators}
+\DoxyCodeLine{00016\ \ \ \ \ \{}
+\DoxyCodeLine{00019\ \ \ \ \ \ \ \ \ \textcolor{keyword}{constexpr}\ \textcolor{keyword}{inline}\ \mbox{\hyperlink{structansi_1_1csi}{sgr}}\ \mbox{\hyperlink{namespaceansi_1_1manipulators_a586520e1ead91212948053e9ac17ab08}{reset}}\{\{\},\ \textcolor{charliteral}{'m'}\};}
+\DoxyCodeLine{00020\ }
+\DoxyCodeLine{00022\ \ \ \ \ \ \ \ \ \textcolor{keyword}{namespace\ }caret}
+\DoxyCodeLine{00023\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00028\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{constexpr}\ \textcolor{keyword}{auto}\ \mbox{\hyperlink{namespaceansi_1_1manipulators_1_1caret_a510f0b4229f4b6ad98a1fc4ba12f2f31}{up}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{byte}\ lines\ =\ 1)\ -\/>\ \mbox{\hyperlink{structansi_1_1csi}{csi<1>}}\ \{\ \textcolor{keywordflow}{return}\ \{\{lines\},\ \textcolor{charliteral}{'A'}\};\ \}}
+\DoxyCodeLine{00029\ }
+\DoxyCodeLine{00034\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{constexpr}\ \textcolor{keyword}{auto}\ \mbox{\hyperlink{namespaceansi_1_1manipulators_1_1caret_a3af5c30eb022345b1b53f4293dcc9570}{down}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{byte}\ lines\ =\ 1)\ -\/>\ \mbox{\hyperlink{structansi_1_1csi}{csi<1>}}\ \{\ \textcolor{keywordflow}{return}\ \{\{lines\},\ \textcolor{charliteral}{'B'}\};\ \}}
+\DoxyCodeLine{00035\ }
+\DoxyCodeLine{00040\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{constexpr}\ \textcolor{keyword}{auto}\ \mbox{\hyperlink{namespaceansi_1_1manipulators_1_1caret_a6550f3afdbdf5ae72b8d43ea91cb45e5}{forward}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{byte}\ lines\ =\ 1)\ -\/>\ \mbox{\hyperlink{structansi_1_1csi}{csi<1>}}\ \{\ \textcolor{keywordflow}{return}\ \{\{lines\},\ \textcolor{charliteral}{'C'}\};\ \}}
+\DoxyCodeLine{00041\ }
+\DoxyCodeLine{00046\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{constexpr}\ \textcolor{keyword}{auto}\ \mbox{\hyperlink{namespaceansi_1_1manipulators_1_1caret_a18f23fce9d13c6ec032328617f7ad7a5}{back}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{byte}\ lines\ =\ 1)\ -\/>\ \mbox{\hyperlink{structansi_1_1csi}{csi<1>}}\ \{\ \textcolor{keywordflow}{return}\ \{\{lines\},\ \textcolor{charliteral}{'D'}\};\ \}}
+\DoxyCodeLine{00047\ }
+\DoxyCodeLine{00052\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{constexpr}\ \textcolor{keyword}{auto}\ \mbox{\hyperlink{namespaceansi_1_1manipulators_1_1caret_ab8d87313e7ec66bbac73249962d96981}{move}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{byte}\ column)\ -\/>\ \mbox{\hyperlink{structansi_1_1csi}{csi<1>}}\ \{\ \textcolor{keywordflow}{return}\ \{\{column\},\ \textcolor{charliteral}{'G'}\};\ \}}
+\DoxyCodeLine{00053\ }
+\DoxyCodeLine{00059\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{constexpr}\ \textcolor{keyword}{auto}\ \mbox{\hyperlink{namespaceansi_1_1manipulators_1_1caret_ab8d87313e7ec66bbac73249962d96981}{move}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{byte}\ row,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{byte}\ column)\ -\/>\ \mbox{\hyperlink{structansi_1_1csi}{csi<2>}}\ \{\ \textcolor{keywordflow}{return}\ \{\{row,\ column\},\ \textcolor{charliteral}{'H'}\};\ \}}
+\DoxyCodeLine{00060\ }
+\DoxyCodeLine{00065\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{consteval}\ \textcolor{keyword}{auto}\ \mbox{\hyperlink{namespaceansi_1_1manipulators_1_1caret_ab7a9476270b4ebaf6b286756cbd27b1f}{home}}()\ -\/>\ \mbox{\hyperlink{structansi_1_1csi}{csi<0>}}\ \{\ \textcolor{keywordflow}{return}\ \{\textcolor{charliteral}{'H'}\};\ \}}
+\DoxyCodeLine{00066\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00067\ }
+\DoxyCodeLine{00069\ \ \ \ \ \ \ \ \ \textcolor{keyword}{namespace\ }line}
+\DoxyCodeLine{00070\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00074\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{constexpr}\ \textcolor{keyword}{auto}\ \mbox{\hyperlink{namespaceansi_1_1manipulators_1_1line_a701154eceac03a37202a9362fc847fed}{next}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{byte}\ lines\ =\ 1)\ -\/>\ \mbox{\hyperlink{structansi_1_1csi}{csi<1>}}\ \{\ \textcolor{keywordflow}{return}\ \{\{lines\},\ \textcolor{charliteral}{'E'}\};\ \}}
+\DoxyCodeLine{00075\ }
+\DoxyCodeLine{00079\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{constexpr}\ \textcolor{keyword}{auto}\ \mbox{\hyperlink{namespaceansi_1_1manipulators_1_1line_afcd53f9179c97483cbdb05b4b73e3ad4}{prev}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{byte}\ lines\ =\ 1)\ -\/>\ \mbox{\hyperlink{structansi_1_1csi}{csi<1>}}\ \{\ \textcolor{keywordflow}{return}\ \{\{lines\},\ \textcolor{charliteral}{'F'}\};\ \}}
+\DoxyCodeLine{00080\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00081\ }
+\DoxyCodeLine{00083\ \ \ \ \ \ \ \ \ \textcolor{keyword}{namespace\ }erase}
+\DoxyCodeLine{00084\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00087\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{enum}\ \mbox{\hyperlink{namespaceansi_1_1manipulators_1_1erase_adbcfcda3d7b17399df5c4248ab3ee971}{erase\_mode}}\ final\ :\ \textcolor{keywordtype}{byte}}
+\DoxyCodeLine{00088\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00089\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{namespaceansi_1_1manipulators_1_1erase_adbcfcda3d7b17399df5c4248ab3ee971a3a623f5e1fb5ccb21fc5a52fa017fd05}{from\_caret}},\ }
+\DoxyCodeLine{00090\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{namespaceansi_1_1manipulators_1_1erase_adbcfcda3d7b17399df5c4248ab3ee971a35e3d617768fdeb5da36bbe15b3837ba}{to\_caret}},\ }
+\DoxyCodeLine{00091\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{namespaceansi_1_1manipulators_1_1erase_adbcfcda3d7b17399df5c4248ab3ee971ab618fa73ed9a1db9b6d17365ec1763b4}{whole}},\ }
+\DoxyCodeLine{00092\ }
+\DoxyCodeLine{00096\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{namespaceansi_1_1manipulators_1_1erase_adbcfcda3d7b17399df5c4248ab3ee971a7f5486dc22b33e75f86cc4bf18149627}{scrollback}}}
+\DoxyCodeLine{00097\ \ \ \ \ \ \ \ \ \ \ \ \ \};}
+\DoxyCodeLine{00098\ }
+\DoxyCodeLine{00099\ }
+\DoxyCodeLine{00104\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{constexpr}\ \textcolor{keyword}{auto}\ all(\textcolor{keyword}{const}\ \mbox{\hyperlink{namespaceansi_1_1manipulators_1_1erase_adbcfcda3d7b17399df5c4248ab3ee971}{erase\_mode}}\ how\ =\ \mbox{\hyperlink{namespaceansi_1_1manipulators_1_1erase_adbcfcda3d7b17399df5c4248ab3ee971ab618fa73ed9a1db9b6d17365ec1763b4}{whole}})\ -\/>\ \mbox{\hyperlink{structansi_1_1csi}{csi<1>}}\ \{\ \textcolor{keywordflow}{return}\ \{how,\ \textcolor{charliteral}{'J'}\};\ \}}
+\DoxyCodeLine{00105\ }
+\DoxyCodeLine{00110\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{constexpr}\ \textcolor{keyword}{auto}\ line(\textcolor{keyword}{const}\ \mbox{\hyperlink{namespaceansi_1_1manipulators_1_1erase_adbcfcda3d7b17399df5c4248ab3ee971}{erase\_mode}}\ how\ =\ \mbox{\hyperlink{namespaceansi_1_1manipulators_1_1erase_adbcfcda3d7b17399df5c4248ab3ee971ab618fa73ed9a1db9b6d17365ec1763b4}{whole}})\ -\/>\ csi<1>\ \{\ \textcolor{keywordflow}{return}\ \{how,\ \textcolor{charliteral}{'K'}\};\ \}}
+\DoxyCodeLine{00111\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00112\ }
+\DoxyCodeLine{00114\ \ \ \ \ \ \ \ \ \textcolor{keyword}{namespace\ }scroll}
+\DoxyCodeLine{00115\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00119\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{constexpr}\ \textcolor{keyword}{auto}\ \mbox{\hyperlink{namespaceansi_1_1manipulators_1_1scroll_a7fca3a2c5203d528e27aad24bc6c353e}{up}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{byte}\ lines\ =\ 1)\ -\/>\ \mbox{\hyperlink{structansi_1_1csi}{csi<1>}}\ \{\ \textcolor{keywordflow}{return}\ \{\{lines\},\ \textcolor{charliteral}{'S'}\};\ \}}
+\DoxyCodeLine{00120\ }
+\DoxyCodeLine{00124\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{constexpr}\ \textcolor{keyword}{auto}\ \mbox{\hyperlink{namespaceansi_1_1manipulators_1_1scroll_a11e41a6ff39984718e565955718e9cb1}{down}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{byte}\ lines\ =\ 1)\ -\/>\ \mbox{\hyperlink{structansi_1_1csi}{csi<1>}}\ \{\ \textcolor{keywordflow}{return}\ \{\{lines\},\ \textcolor{charliteral}{'T'}\};\ \}}
+\DoxyCodeLine{00125\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00126\ }
+\DoxyCodeLine{00128\ \ \ \ \ \ \ \ \ \textcolor{keyword}{namespace\ }text}
+\DoxyCodeLine{00129\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00131\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{constexpr}\ \textcolor{keyword}{inline}\ \mbox{\hyperlink{structansi_1_1csi}{sgr}}\ \mbox{\hyperlink{namespaceansi_1_1manipulators_1_1text_ad019ea600f785623c9ff1b8e2ecfde45}{bold}}\{\{1\},\ \textcolor{charliteral}{'m'}\};}
+\DoxyCodeLine{00132\ }
+\DoxyCodeLine{00134\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{constexpr}\ \textcolor{keyword}{inline}\ \mbox{\hyperlink{structansi_1_1csi}{sgr}}\ \mbox{\hyperlink{namespaceansi_1_1manipulators_1_1text_a89a2354c5e299933d38f38b98bc43e11}{faint}}\{\{2\},\ \textcolor{charliteral}{'m'}\};}
+\DoxyCodeLine{00135\ }
+\DoxyCodeLine{00137\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{constexpr}\ \textcolor{keyword}{inline}\ \mbox{\hyperlink{structansi_1_1csi}{sgr}}\ \mbox{\hyperlink{namespaceansi_1_1manipulators_1_1text_a3bfaa9fd6d6c2fc81b5f8c5015be0894}{italic}}\{\{3\},\ \textcolor{charliteral}{'m'}\};}
+\DoxyCodeLine{00138\ }
+\DoxyCodeLine{00140\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{constexpr}\ \textcolor{keyword}{inline}\ \mbox{\hyperlink{structansi_1_1csi}{sgr}}\ \mbox{\hyperlink{namespaceansi_1_1manipulators_1_1text_a83e1e74d8c54b15d71d950e10ec53c61}{underline}}\{\{4\},\ \textcolor{charliteral}{'m'}\};}
+\DoxyCodeLine{00141\ }
+\DoxyCodeLine{00143\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{constexpr}\ \textcolor{keyword}{inline}\ \mbox{\hyperlink{structansi_1_1csi}{sgr}}\ \mbox{\hyperlink{namespaceansi_1_1manipulators_1_1text_a5bc486f038bcf0892cc3fb3f5f7317c5}{double\_underline}}\{\{21\},\ \textcolor{charliteral}{'m'}\};}
+\DoxyCodeLine{00144\ }
+\DoxyCodeLine{00146\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{constexpr}\ \textcolor{keyword}{inline}\ \mbox{\hyperlink{structansi_1_1csi}{sgr}}\ \mbox{\hyperlink{namespaceansi_1_1manipulators_1_1text_ae9b3f1f6e9544828142412643cb9ed09}{blink}}\{\{5\},\ \textcolor{charliteral}{'m'}\};}
+\DoxyCodeLine{00147\ }
+\DoxyCodeLine{00150\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{constexpr}\ \textcolor{keyword}{inline}\ \mbox{\hyperlink{structansi_1_1csi}{sgr}}\ \mbox{\hyperlink{namespaceansi_1_1manipulators_1_1text_a89be4fcb601c5e197ad73d25ec64cdc1}{blink\_fast}}\{\{6\},\ \textcolor{charliteral}{'m'}\};}
+\DoxyCodeLine{00151\ }
+\DoxyCodeLine{00153\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{constexpr}\ \textcolor{keyword}{inline}\ \mbox{\hyperlink{structansi_1_1csi}{sgr}}\ \mbox{\hyperlink{namespaceansi_1_1manipulators_1_1text_a6990aeaa628e7cf25214ab50abc3dfa0}{invert}}\{\{7\},\ \textcolor{charliteral}{'m'}\};}
+\DoxyCodeLine{00154\ }
+\DoxyCodeLine{00156\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{constexpr}\ \textcolor{keyword}{inline}\ \mbox{\hyperlink{structansi_1_1csi}{sgr}}\ \mbox{\hyperlink{namespaceansi_1_1manipulators_1_1text_a37dfe4158d7eea5f2355c3db42688c18}{revert}}\{\{27\},\ \textcolor{charliteral}{'m'}\};}
+\DoxyCodeLine{00157\ }
+\DoxyCodeLine{00159\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{constexpr}\ \textcolor{keyword}{inline}\ \mbox{\hyperlink{structansi_1_1csi}{sgr}}\ \mbox{\hyperlink{namespaceansi_1_1manipulators_1_1text_afefeefd91e91656fa87c0b3f964bb3e7}{conceal}}\{\{8\},\ \textcolor{charliteral}{'m'}\};}
+\DoxyCodeLine{00160\ }
+\DoxyCodeLine{00162\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{constexpr}\ \textcolor{keyword}{inline}\ \mbox{\hyperlink{structansi_1_1csi}{sgr}}\ \mbox{\hyperlink{namespaceansi_1_1manipulators_1_1text_aecfd730192f1612fd552094685f57ba7}{reveal}}\{\{28\},\ \textcolor{charliteral}{'m'}\};}
+\DoxyCodeLine{00163\ }
+\DoxyCodeLine{00165\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{constexpr}\ \textcolor{keyword}{inline}\ \mbox{\hyperlink{structansi_1_1csi}{sgr}}\ \mbox{\hyperlink{namespaceansi_1_1manipulators_1_1text_ae7506e0d15e302ceb23ab10126fdde8a}{strike}}\{\{9\},\ \textcolor{charliteral}{'m'}\};}
+\DoxyCodeLine{00166\ }
+\DoxyCodeLine{00168\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{constexpr}\ \textcolor{keyword}{inline}\ \mbox{\hyperlink{structansi_1_1csi}{sgr}}\ \mbox{\hyperlink{namespaceansi_1_1manipulators_1_1text_acde7e50726320ed1a8891220bd7e4597}{overline}}\{\{53\},\ \textcolor{charliteral}{'m'}\};}
+\DoxyCodeLine{00169\ }
+\DoxyCodeLine{00171\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{namespace\ }un}
+\DoxyCodeLine{00172\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00174\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{constexpr}\ \textcolor{keyword}{inline}\ \mbox{\hyperlink{structansi_1_1csi}{sgr}}\ \mbox{\hyperlink{namespaceansi_1_1manipulators_1_1text_1_1un_a8179bedcd292729f2c75a2fb25445ffe}{bold}}\{\{22\},\ \textcolor{charliteral}{'m'}\};}
+\DoxyCodeLine{00175\ }
+\DoxyCodeLine{00177\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{constexpr}\ \textcolor{keyword}{inline}\ \mbox{\hyperlink{structansi_1_1csi}{sgr}}\ \mbox{\hyperlink{namespaceansi_1_1manipulators_1_1text_1_1un_ad77cbb59d87010962f4798ce810af222}{faint}}\{\{22\},\ \textcolor{charliteral}{'m'}\};}
+\DoxyCodeLine{00178\ }
+\DoxyCodeLine{00180\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{constexpr}\ \textcolor{keyword}{inline}\ \mbox{\hyperlink{structansi_1_1csi}{sgr}}\ \mbox{\hyperlink{namespaceansi_1_1manipulators_1_1text_1_1un_a57be52fe7874d78592daae1c0f5b4ae9}{italic}}\{\{23\},\ \textcolor{charliteral}{'m'}\};}
+\DoxyCodeLine{00181\ }
+\DoxyCodeLine{00183\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{constexpr}\ \textcolor{keyword}{inline}\ \mbox{\hyperlink{structansi_1_1csi}{sgr}}\ \mbox{\hyperlink{namespaceansi_1_1manipulators_1_1text_1_1un_a3a69dbba086be9388b6b3f1327859657}{underline}}\{\{24\},\ \textcolor{charliteral}{'m'}\};}
+\DoxyCodeLine{00184\ }
+\DoxyCodeLine{00186\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{constexpr}\ \textcolor{keyword}{inline}\ \mbox{\hyperlink{structansi_1_1csi}{sgr}}\ \mbox{\hyperlink{namespaceansi_1_1manipulators_1_1text_1_1un_aa21855f2b9a43ea107b5a15ace2ef2a8}{blink}}\{\{25\},\ \textcolor{charliteral}{'m'}\};}
+\DoxyCodeLine{00187\ }
+\DoxyCodeLine{00189\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{constexpr}\ \textcolor{keyword}{inline}\ \mbox{\hyperlink{structansi_1_1csi}{sgr}}\ \mbox{\hyperlink{namespaceansi_1_1manipulators_1_1text_1_1un_a91d5fcf5ce494a67be6c521b03840acd}{invert}}\{\{27\},\ \textcolor{charliteral}{'m'}\};}
+\DoxyCodeLine{00190\ }
+\DoxyCodeLine{00192\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{constexpr}\ \textcolor{keyword}{inline}\ \mbox{\hyperlink{structansi_1_1csi}{sgr}}\ \mbox{\hyperlink{namespaceansi_1_1manipulators_1_1text_1_1un_a19c3cd75e8226d781ec1e7181619ea1b}{conceal}}\{\{28\},\ \textcolor{charliteral}{'m'}\};}
+\DoxyCodeLine{00193\ }
+\DoxyCodeLine{00195\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{constexpr}\ \textcolor{keyword}{inline}\ \mbox{\hyperlink{structansi_1_1csi}{sgr}}\ \mbox{\hyperlink{namespaceansi_1_1manipulators_1_1text_1_1un_a32deb36fc628455bd96f554ecff56611}{strike}}\{\{29\},\ \textcolor{charliteral}{'m'}\};}
+\DoxyCodeLine{00196\ }
+\DoxyCodeLine{00198\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{constexpr}\ \textcolor{keyword}{inline}\ \mbox{\hyperlink{structansi_1_1csi}{sgr}}\ \mbox{\hyperlink{namespaceansi_1_1manipulators_1_1text_1_1un_abe49d05eee28552ad6d5b545161fa264}{overline}}\{\{55\},\ \textcolor{charliteral}{'m'}\};}
+\DoxyCodeLine{00199\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00200\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00201\ }
+\DoxyCodeLine{00203\ \ \ \ \ \ \ \ \ \textcolor{keyword}{namespace\ }fg}
+\DoxyCodeLine{00204\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00206\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{constexpr}\ \textcolor{keyword}{inline}\ \mbox{\hyperlink{structansi_1_1csi}{sgr}}\ \mbox{\hyperlink{namespaceansi_1_1manipulators_1_1fg_aafd70784cd5bccd11bcf30ac8c14bd0b}{regular}}\{\{39\},\ \textcolor{charliteral}{'m'}\};}
+\DoxyCodeLine{00207\ }
+\DoxyCodeLine{00209\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{constexpr}\ \textcolor{keyword}{inline}\ \mbox{\hyperlink{structansi_1_1csi}{sgr}}\ \mbox{\hyperlink{namespaceansi_1_1manipulators_1_1fg_af784cfca7a66ef024d3256adc96e0117}{black}}\{\{30\},\ \textcolor{charliteral}{'m'}\};}
+\DoxyCodeLine{00210\ }
+\DoxyCodeLine{00212\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{constexpr}\ \textcolor{keyword}{inline}\ \mbox{\hyperlink{structansi_1_1csi}{sgr}}\ \mbox{\hyperlink{namespaceansi_1_1manipulators_1_1fg_a4e2a0b3c8cca5de14c36f0fec7cb29c6}{red}}\{\{31\},\ \textcolor{charliteral}{'m'}\};}
+\DoxyCodeLine{00213\ }
+\DoxyCodeLine{00215\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{constexpr}\ \textcolor{keyword}{inline}\ \mbox{\hyperlink{structansi_1_1csi}{sgr}}\ \mbox{\hyperlink{namespaceansi_1_1manipulators_1_1fg_af24ff5b8b950d22b665dabc9ab20b7ba}{green}}\{\{32\},\ \textcolor{charliteral}{'m'}\};}
+\DoxyCodeLine{00216\ }
+\DoxyCodeLine{00218\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{constexpr}\ \textcolor{keyword}{inline}\ \mbox{\hyperlink{structansi_1_1csi}{sgr}}\ \mbox{\hyperlink{namespaceansi_1_1manipulators_1_1fg_a1ec677e6289ca233949c910b6ffd206a}{yellow}}\{\{33\},\ \textcolor{charliteral}{'m'}\};}
+\DoxyCodeLine{00219\ }
+\DoxyCodeLine{00221\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{constexpr}\ \textcolor{keyword}{inline}\ \mbox{\hyperlink{structansi_1_1csi}{sgr}}\ \mbox{\hyperlink{namespaceansi_1_1manipulators_1_1fg_a9b0d7d9c4472361c39bdf6f704cf5ece}{indigo}}\{\{34\},\ \textcolor{charliteral}{'m'}\};}
+\DoxyCodeLine{00222\ }
+\DoxyCodeLine{00224\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{constexpr}\ \textcolor{keyword}{inline}\ \mbox{\hyperlink{structansi_1_1csi}{sgr}}\ \mbox{\hyperlink{namespaceansi_1_1manipulators_1_1fg_ac06ba38eaf95ab71c84c968c8d477ff2}{magenta}}\{\{35\},\ \textcolor{charliteral}{'m'}\};}
+\DoxyCodeLine{00225\ }
+\DoxyCodeLine{00227\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{constexpr}\ \textcolor{keyword}{inline}\ \mbox{\hyperlink{structansi_1_1csi}{sgr}}\ \mbox{\hyperlink{namespaceansi_1_1manipulators_1_1fg_af0082a2ec1aa8eabe601087a5a373cc7}{cyan}}\{\{36\},\ \textcolor{charliteral}{'m'}\};}
+\DoxyCodeLine{00228\ }
+\DoxyCodeLine{00230\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{constexpr}\ \textcolor{keyword}{inline}\ \mbox{\hyperlink{structansi_1_1csi}{sgr}}\ \mbox{\hyperlink{namespaceansi_1_1manipulators_1_1fg_a81c44ff9695b5a11254fd314dfd477f7}{white}}\{\{37\},\ \textcolor{charliteral}{'m'}\};}
+\DoxyCodeLine{00231\ }
+\DoxyCodeLine{00233\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{constexpr}\ \textcolor{keyword}{inline}\ \mbox{\hyperlink{structansi_1_1csi}{sgr}}\ \mbox{\hyperlink{namespaceansi_1_1manipulators_1_1fg_ab67156c46708ca8d70946c5ed2335caa}{gray}}\{\{90\},\ \textcolor{charliteral}{'m'}\};}
+\DoxyCodeLine{00234\ }
+\DoxyCodeLine{00235\ }
+\DoxyCodeLine{00239\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{constexpr}\ \textcolor{keyword}{auto}\ \mbox{\hyperlink{namespaceansi_1_1manipulators_1_1fg_ab1b3df67cfdd7b7cf6fdd64f4618d548}{set}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{byte}\ color)\ -\/>\ \mbox{\hyperlink{structansi_1_1csi}{col}}\ \{\ \textcolor{keywordflow}{return}\ \{\{38,\ 5,\ color\},\ \textcolor{charliteral}{'m'}\};\ \}}
+\DoxyCodeLine{00240\ }
+\DoxyCodeLine{00246\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{constexpr}\ \textcolor{keyword}{auto}\ \mbox{\hyperlink{namespaceansi_a8455a854372433b6c7dfbd3e1d5158c9}{rgb}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{byte}\ r,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{byte}\ g,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{byte}\ b)\ -\/>\ \mbox{\hyperlink{structansi_1_1csi}{rgb}}\ \{\ \textcolor{keywordflow}{return}\ \{\{38,\ 2,\ r,\ g,\ b\},\ \textcolor{charliteral}{'m'}\};\ \}}
+\DoxyCodeLine{00247\ }
+\DoxyCodeLine{00249\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{namespace\ }bright}
+\DoxyCodeLine{00250\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00252\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{constexpr}\ \textcolor{keyword}{inline}\ \mbox{\hyperlink{structansi_1_1csi}{sgr}}\ \mbox{\hyperlink{namespaceansi_1_1manipulators_1_1fg_1_1bright_ae3ade90225d8629ff63919f9e2a244bd}{black}}\{\{90\},\ \textcolor{charliteral}{'m'}\};}
+\DoxyCodeLine{00253\ }
+\DoxyCodeLine{00255\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{constexpr}\ \textcolor{keyword}{inline}\ \mbox{\hyperlink{structansi_1_1csi}{sgr}}\ \mbox{\hyperlink{namespaceansi_1_1manipulators_1_1fg_1_1bright_a2e3692e8e0ca94c40f49eb6adcf2ebeb}{red}}\{\{91\},\ \textcolor{charliteral}{'m'}\};}
+\DoxyCodeLine{00256\ }
+\DoxyCodeLine{00258\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{constexpr}\ \textcolor{keyword}{inline}\ \mbox{\hyperlink{structansi_1_1csi}{sgr}}\ \mbox{\hyperlink{namespaceansi_1_1manipulators_1_1fg_1_1bright_a5fa69d1490022ed5a850cd7088be4b64}{green}}\{\{92\},\ \textcolor{charliteral}{'m'}\};}
+\DoxyCodeLine{00259\ }
+\DoxyCodeLine{00261\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{constexpr}\ \textcolor{keyword}{inline}\ \mbox{\hyperlink{structansi_1_1csi}{sgr}}\ \mbox{\hyperlink{namespaceansi_1_1manipulators_1_1fg_1_1bright_a4492adbc316101b410a2e37937ef21c3}{yellow}}\{\{93\},\ \textcolor{charliteral}{'m'}\};}
+\DoxyCodeLine{00262\ }
+\DoxyCodeLine{00264\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{constexpr}\ \textcolor{keyword}{inline}\ \mbox{\hyperlink{structansi_1_1csi}{sgr}}\ \mbox{\hyperlink{namespaceansi_1_1manipulators_1_1fg_1_1bright_af15d9ec240b885f94a3ad65f150f015f}{indigo}}\{\{94\},\ \textcolor{charliteral}{'m'}\};}
+\DoxyCodeLine{00265\ }
+\DoxyCodeLine{00267\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{constexpr}\ \textcolor{keyword}{inline}\ \mbox{\hyperlink{structansi_1_1csi}{sgr}}\ \mbox{\hyperlink{namespaceansi_1_1manipulators_1_1fg_1_1bright_a90de8794fddf49bc169db3d68f11218e}{magenta}}\{\{95\},\ \textcolor{charliteral}{'m'}\};}
+\DoxyCodeLine{00268\ }
+\DoxyCodeLine{00270\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{constexpr}\ \textcolor{keyword}{inline}\ \mbox{\hyperlink{structansi_1_1csi}{sgr}}\ \mbox{\hyperlink{namespaceansi_1_1manipulators_1_1fg_1_1bright_a21befd549b4d7d286e6eeea72fb83a6d}{cyan}}\{\{96\},\ \textcolor{charliteral}{'m'}\};}
+\DoxyCodeLine{00271\ }
+\DoxyCodeLine{00273\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{constexpr}\ \textcolor{keyword}{inline}\ \mbox{\hyperlink{structansi_1_1csi}{sgr}}\ \mbox{\hyperlink{namespaceansi_1_1manipulators_1_1fg_1_1bright_a712ebeef873acf8a315dd1a32468355e}{white}}\{\{97\},\ \textcolor{charliteral}{'m'}\};}
+\DoxyCodeLine{00274\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00275\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00276\ }
+\DoxyCodeLine{00278\ \ \ \ \ \ \ \ \ \textcolor{keyword}{namespace\ }bg}
+\DoxyCodeLine{00279\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00281\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{constexpr}\ \textcolor{keyword}{inline}\ \mbox{\hyperlink{structansi_1_1csi}{sgr}}\ \mbox{\hyperlink{namespaceansi_1_1manipulators_1_1bg_a8903830839a8010348163d54dcf5adae}{regular}}\{\{49\},\ \textcolor{charliteral}{'m'}\};}
+\DoxyCodeLine{00282\ }
+\DoxyCodeLine{00284\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{constexpr}\ \textcolor{keyword}{inline}\ \mbox{\hyperlink{structansi_1_1csi}{sgr}}\ \mbox{\hyperlink{namespaceansi_1_1manipulators_1_1bg_af402df00633989607b509cc0957c7428}{black}}\{\{40\},\ \textcolor{charliteral}{'m'}\};}
+\DoxyCodeLine{00285\ }
+\DoxyCodeLine{00287\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{constexpr}\ \textcolor{keyword}{inline}\ \mbox{\hyperlink{structansi_1_1csi}{sgr}}\ \mbox{\hyperlink{namespaceansi_1_1manipulators_1_1bg_a7e8a72060959016a8c3be2647ad77ff4}{red}}\{\{41\},\ \textcolor{charliteral}{'m'}\};}
+\DoxyCodeLine{00288\ }
+\DoxyCodeLine{00290\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{constexpr}\ \textcolor{keyword}{inline}\ \mbox{\hyperlink{structansi_1_1csi}{sgr}}\ \mbox{\hyperlink{namespaceansi_1_1manipulators_1_1bg_acdd98d9deb3d967ea3a94eecad00eecc}{green}}\{\{42\},\ \textcolor{charliteral}{'m'}\};}
+\DoxyCodeLine{00291\ }
+\DoxyCodeLine{00293\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{constexpr}\ \textcolor{keyword}{inline}\ \mbox{\hyperlink{structansi_1_1csi}{sgr}}\ \mbox{\hyperlink{namespaceansi_1_1manipulators_1_1bg_a780557eaf03a2cbf3e19ddb0448a25ff}{yellow}}\{\{43\},\ \textcolor{charliteral}{'m'}\};}
+\DoxyCodeLine{00294\ }
+\DoxyCodeLine{00296\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{constexpr}\ \textcolor{keyword}{inline}\ \mbox{\hyperlink{structansi_1_1csi}{sgr}}\ \mbox{\hyperlink{namespaceansi_1_1manipulators_1_1bg_ad1d8d90520dab31c5b5268241d5850a0}{indigo}}\{\{44\},\ \textcolor{charliteral}{'m'}\};}
+\DoxyCodeLine{00297\ }
+\DoxyCodeLine{00299\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{constexpr}\ \textcolor{keyword}{inline}\ \mbox{\hyperlink{structansi_1_1csi}{sgr}}\ \mbox{\hyperlink{namespaceansi_1_1manipulators_1_1bg_a7afd661730e14a90874ac21de8fbc0b6}{magenta}}\{\{45\},\ \textcolor{charliteral}{'m'}\};}
+\DoxyCodeLine{00300\ }
+\DoxyCodeLine{00302\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{constexpr}\ \textcolor{keyword}{inline}\ \mbox{\hyperlink{structansi_1_1csi}{sgr}}\ \mbox{\hyperlink{namespaceansi_1_1manipulators_1_1bg_a6883787ad9465f2e7e9c8eb37764b794}{cyan}}\{\{46\},\ \textcolor{charliteral}{'m'}\};}
+\DoxyCodeLine{00303\ }
+\DoxyCodeLine{00305\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{constexpr}\ \textcolor{keyword}{inline}\ \mbox{\hyperlink{structansi_1_1csi}{sgr}}\ \mbox{\hyperlink{namespaceansi_1_1manipulators_1_1bg_a73619b8d36a7628e5081757c57cd6db5}{white}}\{\{47\},\ \textcolor{charliteral}{'m'}\};}
+\DoxyCodeLine{00306\ }
+\DoxyCodeLine{00308\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{constexpr}\ \textcolor{keyword}{inline}\ \mbox{\hyperlink{structansi_1_1csi}{sgr}}\ \mbox{\hyperlink{namespaceansi_1_1manipulators_1_1bg_a01c055ea75950189064ef4489c23f476}{gray}}\{\{100\},\ \textcolor{charliteral}{'m'}\};}
+\DoxyCodeLine{00309\ }
+\DoxyCodeLine{00310\ }
+\DoxyCodeLine{00314\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{constexpr}\ \textcolor{keyword}{auto}\ \mbox{\hyperlink{namespaceansi_1_1manipulators_1_1bg_aac5ccbf5721450c644217d97da100810}{set}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{byte}\ color)\ -\/>\ \mbox{\hyperlink{structansi_1_1csi}{col}}\ \{\ \textcolor{keywordflow}{return}\ \{\{48,\ 5,\ color\},\ \textcolor{charliteral}{'m'}\};\ \}}
+\DoxyCodeLine{00315\ }
+\DoxyCodeLine{00321\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{constexpr}\ \textcolor{keyword}{auto}\ \mbox{\hyperlink{namespaceansi_a8455a854372433b6c7dfbd3e1d5158c9}{rgb}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{byte}\ r,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{byte}\ g,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{byte}\ b)\ -\/>\ \mbox{\hyperlink{structansi_1_1csi}{rgb}}\ \{\ \textcolor{keywordflow}{return}\ \{\{48,\ 2,\ r,\ g,\ b\},\ \textcolor{charliteral}{'m'}\};\ \}}
+\DoxyCodeLine{00322\ }
+\DoxyCodeLine{00324\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{namespace\ }bright}
+\DoxyCodeLine{00325\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00327\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{constexpr}\ \textcolor{keyword}{inline}\ \mbox{\hyperlink{structansi_1_1csi}{sgr}}\ \mbox{\hyperlink{namespaceansi_1_1manipulators_1_1bg_1_1bright_a735bed5e79c6976582f0091e9abbf9fa}{black}}\{\{100\},\ \textcolor{charliteral}{'m'}\};}
+\DoxyCodeLine{00328\ }
+\DoxyCodeLine{00330\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{constexpr}\ \textcolor{keyword}{inline}\ \mbox{\hyperlink{structansi_1_1csi}{sgr}}\ \mbox{\hyperlink{namespaceansi_1_1manipulators_1_1bg_1_1bright_ac39d9927fb9b3e8bef8d33e0932cd36c}{red}}\{\{101\},\ \textcolor{charliteral}{'m'}\};}
+\DoxyCodeLine{00331\ }
+\DoxyCodeLine{00333\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{constexpr}\ \textcolor{keyword}{inline}\ \mbox{\hyperlink{structansi_1_1csi}{sgr}}\ \mbox{\hyperlink{namespaceansi_1_1manipulators_1_1bg_1_1bright_ab060d8d429fb94d629eca1ae31ba43fe}{green}}\{\{102\},\ \textcolor{charliteral}{'m'}\};}
+\DoxyCodeLine{00334\ }
+\DoxyCodeLine{00336\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{constexpr}\ \textcolor{keyword}{inline}\ \mbox{\hyperlink{structansi_1_1csi}{sgr}}\ \mbox{\hyperlink{namespaceansi_1_1manipulators_1_1bg_1_1bright_adef881714c69be0e2b0c0afbcee32965}{yellow}}\{\{103\},\ \textcolor{charliteral}{'m'}\};}
+\DoxyCodeLine{00337\ }
+\DoxyCodeLine{00339\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{constexpr}\ \textcolor{keyword}{inline}\ \mbox{\hyperlink{structansi_1_1csi}{sgr}}\ \mbox{\hyperlink{namespaceansi_1_1manipulators_1_1bg_1_1bright_ac102d134c0bd07e1184d1bdf9dc2718e}{indigo}}\{\{104\},\ \textcolor{charliteral}{'m'}\};}
+\DoxyCodeLine{00340\ }
+\DoxyCodeLine{00342\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{constexpr}\ \textcolor{keyword}{inline}\ \mbox{\hyperlink{structansi_1_1csi}{sgr}}\ \mbox{\hyperlink{namespaceansi_1_1manipulators_1_1bg_1_1bright_aaf585d639e80ab22530c22cf720cbc95}{magenta}}\{\{105\},\ \textcolor{charliteral}{'m'}\};}
+\DoxyCodeLine{00343\ }
+\DoxyCodeLine{00345\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{constexpr}\ \textcolor{keyword}{inline}\ \mbox{\hyperlink{structansi_1_1csi}{sgr}}\ \mbox{\hyperlink{namespaceansi_1_1manipulators_1_1bg_1_1bright_aee6af1bb067aff34446105ff79423056}{cyan}}\{\{106\},\ \textcolor{charliteral}{'m'}\};}
+\DoxyCodeLine{00346\ }
+\DoxyCodeLine{00348\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{constexpr}\ \textcolor{keyword}{inline}\ \mbox{\hyperlink{structansi_1_1csi}{sgr}}\ \mbox{\hyperlink{namespaceansi_1_1manipulators_1_1bg_1_1bright_ad06571d5770a384c1875f60fc3509cd4}{white}}\{\{107\},\ \textcolor{charliteral}{'m'}\};}
+\DoxyCodeLine{00349\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00350\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00351\ }
+\DoxyCodeLine{00353\ \ \ \ \ \ \ \ \ \textcolor{keyword}{namespace\ }underline}
+\DoxyCodeLine{00354\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00356\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{constexpr}\ \textcolor{keyword}{inline}\ \mbox{\hyperlink{structansi_1_1csi}{sgr}}\ \mbox{\hyperlink{namespaceansi_1_1manipulators_1_1underline_a2d5a09f72276e32d22fa97c9b6df9bfa}{regular}}\{\{59\},\ \textcolor{charliteral}{'m'}\};}
+\DoxyCodeLine{00357\ }
+\DoxyCodeLine{00358\ }
+\DoxyCodeLine{00362\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{constexpr}\ \textcolor{keyword}{auto}\ \mbox{\hyperlink{namespaceansi_1_1manipulators_1_1underline_ad142449249b576ec080ce9c7db2e167f}{set}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{byte}\ color)\ -\/>\ \mbox{\hyperlink{structansi_1_1csi}{col}}\ \{\ \textcolor{keywordflow}{return}\ \{\{58,\ 5,\ color\},\ \textcolor{charliteral}{'m'}\};\ \}}
+\DoxyCodeLine{00363\ }
+\DoxyCodeLine{00369\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{constexpr}\ \textcolor{keyword}{auto}\ \mbox{\hyperlink{namespaceansi_a8455a854372433b6c7dfbd3e1d5158c9}{rgb}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{byte}\ red,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{byte}\ green,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{byte}\ blue)\ -\/>\ \mbox{\hyperlink{structansi_1_1csi}{rgb}}\ \{\ \textcolor{keywordflow}{return}\ \{\{58,\ 2,\ red,\ green,\ blue\},\ \textcolor{charliteral}{'m'}\};\ \}}
+\DoxyCodeLine{00370\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00371\ \ \ \ \ \}}
+\DoxyCodeLine{00372\ \}}
+
+\end{DoxyCode}

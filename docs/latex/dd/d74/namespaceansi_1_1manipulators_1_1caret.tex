@@ -1,0 +1,156 @@
+\doxysection{ansi\+::manipulators\+::caret Namespace Reference}
+\hypertarget{namespaceansi_1_1manipulators_1_1caret}{}\label{namespaceansi_1_1manipulators_1_1caret}\index{ansi::manipulators::caret@{ansi::manipulators::caret}}
+
+
+Caret manipulations.  
+
+
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+constexpr auto \mbox{\hyperlink{namespaceansi_1_1manipulators_1_1caret_a510f0b4229f4b6ad98a1fc4ba12f2f31}{up}} (const \mbox{\hyperlink{namespaceansi_a47fab9a98312717efcc626515c474df9}{byte}} lines=1) -\/$>$ \mbox{\hyperlink{structansi_1_1csi}{csi}}$<$ 1 $>$
+\begin{DoxyCompactList}\small\item\em Caret up. \end{DoxyCompactList}\item 
+constexpr auto \mbox{\hyperlink{namespaceansi_1_1manipulators_1_1caret_a3af5c30eb022345b1b53f4293dcc9570}{down}} (const \mbox{\hyperlink{namespaceansi_a47fab9a98312717efcc626515c474df9}{byte}} lines=1) -\/$>$ \mbox{\hyperlink{structansi_1_1csi}{csi}}$<$ 1 $>$
+\begin{DoxyCompactList}\small\item\em Caret down. \end{DoxyCompactList}\item 
+constexpr auto \mbox{\hyperlink{namespaceansi_1_1manipulators_1_1caret_a6550f3afdbdf5ae72b8d43ea91cb45e5}{forward}} (const \mbox{\hyperlink{namespaceansi_a47fab9a98312717efcc626515c474df9}{byte}} lines=1) -\/$>$ \mbox{\hyperlink{structansi_1_1csi}{csi}}$<$ 1 $>$
+\begin{DoxyCompactList}\small\item\em Caret forward. \end{DoxyCompactList}\item 
+constexpr auto \mbox{\hyperlink{namespaceansi_1_1manipulators_1_1caret_a18f23fce9d13c6ec032328617f7ad7a5}{back}} (const \mbox{\hyperlink{namespaceansi_a47fab9a98312717efcc626515c474df9}{byte}} lines=1) -\/$>$ \mbox{\hyperlink{structansi_1_1csi}{csi}}$<$ 1 $>$
+\begin{DoxyCompactList}\small\item\em Caret back. \end{DoxyCompactList}\item 
+constexpr auto \mbox{\hyperlink{namespaceansi_1_1manipulators_1_1caret_ab8d87313e7ec66bbac73249962d96981}{move}} (const \mbox{\hyperlink{namespaceansi_a47fab9a98312717efcc626515c474df9}{byte}} column) -\/$>$ \mbox{\hyperlink{structansi_1_1csi}{csi}}$<$ 1 $>$
+\begin{DoxyCompactList}\small\item\em Caret vertical position. \end{DoxyCompactList}\item 
+constexpr auto \mbox{\hyperlink{namespaceansi_1_1manipulators_1_1caret_a162df35851aa924531419e150f157fb5}{move}} (const \mbox{\hyperlink{namespaceansi_a47fab9a98312717efcc626515c474df9}{byte}} row, const \mbox{\hyperlink{namespaceansi_a47fab9a98312717efcc626515c474df9}{byte}} column) -\/$>$ \mbox{\hyperlink{structansi_1_1csi}{csi}}$<$ 2 $>$
+\begin{DoxyCompactList}\small\item\em Caret position. \end{DoxyCompactList}\item 
+consteval auto \mbox{\hyperlink{namespaceansi_1_1manipulators_1_1caret_ab7a9476270b4ebaf6b286756cbd27b1f}{home}} () -\/$>$ \mbox{\hyperlink{structansi_1_1csi}{csi}}$<$ 0 $>$
+\begin{DoxyCompactList}\small\item\em Caret position. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Caret manipulations. 
+
+\doxysubsection{Function Documentation}
+\Hypertarget{namespaceansi_1_1manipulators_1_1caret_a18f23fce9d13c6ec032328617f7ad7a5}\index{ansi::manipulators::caret@{ansi::manipulators::caret}!back@{back}}
+\index{back@{back}!ansi::manipulators::caret@{ansi::manipulators::caret}}
+\doxysubsubsection{\texorpdfstring{back()}{back()}}
+{\footnotesize\ttfamily \label{namespaceansi_1_1manipulators_1_1caret_a18f23fce9d13c6ec032328617f7ad7a5} 
+auto ansi\+::manipulators\+::caret\+::back (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{namespaceansi_a47fab9a98312717efcc626515c474df9}{byte}}}]{lines}{ = {\ttfamily 1}}\end{DoxyParamCaption}) -\/$>$ \mbox{\hyperlink{structansi_1_1csi}{csi}}$<$1$>$ \hspace{0.3cm}{\ttfamily [constexpr]}}
+
+
+
+Caret back. 
+
+Moves caret back. If caret is already at the edge of the screen, this has no effect. 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em lines} & Number of lines to go back. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+CSI representing the {\itshape caret back} action. 
+\end{DoxyReturn}
+\Hypertarget{namespaceansi_1_1manipulators_1_1caret_a3af5c30eb022345b1b53f4293dcc9570}\index{ansi::manipulators::caret@{ansi::manipulators::caret}!down@{down}}
+\index{down@{down}!ansi::manipulators::caret@{ansi::manipulators::caret}}
+\doxysubsubsection{\texorpdfstring{down()}{down()}}
+{\footnotesize\ttfamily \label{namespaceansi_1_1manipulators_1_1caret_a3af5c30eb022345b1b53f4293dcc9570} 
+auto ansi\+::manipulators\+::caret\+::down (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{namespaceansi_a47fab9a98312717efcc626515c474df9}{byte}}}]{lines}{ = {\ttfamily 1}}\end{DoxyParamCaption}) -\/$>$ \mbox{\hyperlink{structansi_1_1csi}{csi}}$<$1$>$ \hspace{0.3cm}{\ttfamily [constexpr]}}
+
+
+
+Caret down. 
+
+Moves caret down. If caret is already at the edge of the screen, this has no effect. 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em lines} & Number of lines to go down. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+CSI representing the {\itshape caret down} action. 
+\end{DoxyReturn}
+\Hypertarget{namespaceansi_1_1manipulators_1_1caret_a6550f3afdbdf5ae72b8d43ea91cb45e5}\index{ansi::manipulators::caret@{ansi::manipulators::caret}!forward@{forward}}
+\index{forward@{forward}!ansi::manipulators::caret@{ansi::manipulators::caret}}
+\doxysubsubsection{\texorpdfstring{forward()}{forward()}}
+{\footnotesize\ttfamily \label{namespaceansi_1_1manipulators_1_1caret_a6550f3afdbdf5ae72b8d43ea91cb45e5} 
+auto ansi\+::manipulators\+::caret\+::forward (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{namespaceansi_a47fab9a98312717efcc626515c474df9}{byte}}}]{lines}{ = {\ttfamily 1}}\end{DoxyParamCaption}) -\/$>$ \mbox{\hyperlink{structansi_1_1csi}{csi}}$<$1$>$ \hspace{0.3cm}{\ttfamily [constexpr]}}
+
+
+
+Caret forward. 
+
+Moves caret forward. If caret is already at the edge of the screen, this has no effect. 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em lines} & Number of lines to forward. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+CSI representing the {\itshape caret forward} action. 
+\end{DoxyReturn}
+\Hypertarget{namespaceansi_1_1manipulators_1_1caret_ab7a9476270b4ebaf6b286756cbd27b1f}\index{ansi::manipulators::caret@{ansi::manipulators::caret}!home@{home}}
+\index{home@{home}!ansi::manipulators::caret@{ansi::manipulators::caret}}
+\doxysubsubsection{\texorpdfstring{home()}{home()}}
+{\footnotesize\ttfamily \label{namespaceansi_1_1manipulators_1_1caret_ab7a9476270b4ebaf6b286756cbd27b1f} 
+auto ansi\+::manipulators\+::caret\+::home (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) -\/$>$ \mbox{\hyperlink{structansi_1_1csi}{csi}}$<$0$>$ \hspace{0.3cm}{\ttfamily [consteval]}}
+
+
+
+Caret position. 
+
+Moves caret the origin. \begin{DoxyReturn}{Returns}
+CSI representing the {\itshape caret movement} action. 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+ansi\+::manip\+::move() 
+\end{DoxySeeAlso}
+\Hypertarget{namespaceansi_1_1manipulators_1_1caret_ab8d87313e7ec66bbac73249962d96981}\index{ansi::manipulators::caret@{ansi::manipulators::caret}!move@{move}}
+\index{move@{move}!ansi::manipulators::caret@{ansi::manipulators::caret}}
+\doxysubsubsection{\texorpdfstring{move()}{move()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{namespaceansi_1_1manipulators_1_1caret_ab8d87313e7ec66bbac73249962d96981} 
+auto ansi\+::manipulators\+::caret\+::move (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{namespaceansi_a47fab9a98312717efcc626515c474df9}{byte}}}]{column}{}\end{DoxyParamCaption}) -\/$>$ \mbox{\hyperlink{structansi_1_1csi}{csi}}$<$1$>$ \hspace{0.3cm}{\ttfamily [constexpr]}}
+
+
+
+Caret vertical position. 
+
+Moves caret to specific column. 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em column} & Column number. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+CSI representing the {\itshape caret vertical movement} action. 
+\end{DoxyReturn}
+\Hypertarget{namespaceansi_1_1manipulators_1_1caret_a162df35851aa924531419e150f157fb5}\index{ansi::manipulators::caret@{ansi::manipulators::caret}!move@{move}}
+\index{move@{move}!ansi::manipulators::caret@{ansi::manipulators::caret}}
+\doxysubsubsection{\texorpdfstring{move()}{move()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{namespaceansi_1_1manipulators_1_1caret_a162df35851aa924531419e150f157fb5} 
+auto ansi\+::manipulators\+::caret\+::move (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{namespaceansi_a47fab9a98312717efcc626515c474df9}{byte}}}]{row}{, }\item[{const \mbox{\hyperlink{namespaceansi_a47fab9a98312717efcc626515c474df9}{byte}}}]{column}{}\end{DoxyParamCaption}) -\/$>$ \mbox{\hyperlink{structansi_1_1csi}{csi}}$<$2$>$ \hspace{0.3cm}{\ttfamily [constexpr]}}
+
+
+
+Caret position. 
+
+Moves caret to specific cell. 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em row} & Row number. \\
+\hline
+\mbox{\texttt{ in}}  & {\em column} & Column number. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+CSI representing the {\itshape caret movement} action. 
+\end{DoxyReturn}
+\Hypertarget{namespaceansi_1_1manipulators_1_1caret_a510f0b4229f4b6ad98a1fc4ba12f2f31}\index{ansi::manipulators::caret@{ansi::manipulators::caret}!up@{up}}
+\index{up@{up}!ansi::manipulators::caret@{ansi::manipulators::caret}}
+\doxysubsubsection{\texorpdfstring{up()}{up()}}
+{\footnotesize\ttfamily \label{namespaceansi_1_1manipulators_1_1caret_a510f0b4229f4b6ad98a1fc4ba12f2f31} 
+auto ansi\+::manipulators\+::caret\+::up (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{namespaceansi_a47fab9a98312717efcc626515c474df9}{byte}}}]{lines}{ = {\ttfamily 1}}\end{DoxyParamCaption}) -\/$>$ \mbox{\hyperlink{structansi_1_1csi}{csi}}$<$1$>$ \hspace{0.3cm}{\ttfamily [constexpr]}}
+
+
+
+Caret up. 
+
+Moves caret up. If caret is already at the edge of the screen, this has no effect. 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em lines} & Number of lines to go up. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+CSI representing the {\itshape caret up} action. 
+\end{DoxyReturn}

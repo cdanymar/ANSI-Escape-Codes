@@ -1,0 +1,56 @@
+\doxysection{ansi\+::manipulators\+::scroll Namespace Reference}
+\hypertarget{namespaceansi_1_1manipulators_1_1scroll}{}\label{namespaceansi_1_1manipulators_1_1scroll}\index{ansi::manipulators::scroll@{ansi::manipulators::scroll}}
+
+
+Scroll functions.  
+
+
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+constexpr auto \mbox{\hyperlink{namespaceansi_1_1manipulators_1_1scroll_a7fca3a2c5203d528e27aad24bc6c353e}{up}} (const \mbox{\hyperlink{namespaceansi_a47fab9a98312717efcc626515c474df9}{byte}} lines=1) -\/$>$ \mbox{\hyperlink{structansi_1_1csi}{csi}}$<$ 1 $>$
+\begin{DoxyCompactList}\small\item\em Scrolls page up. \end{DoxyCompactList}\item 
+constexpr auto \mbox{\hyperlink{namespaceansi_1_1manipulators_1_1scroll_a11e41a6ff39984718e565955718e9cb1}{down}} (const \mbox{\hyperlink{namespaceansi_a47fab9a98312717efcc626515c474df9}{byte}} lines=1) -\/$>$ \mbox{\hyperlink{structansi_1_1csi}{csi}}$<$ 1 $>$
+\begin{DoxyCompactList}\small\item\em Scrolls page down. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Scroll functions. 
+
+\doxysubsection{Function Documentation}
+\Hypertarget{namespaceansi_1_1manipulators_1_1scroll_a11e41a6ff39984718e565955718e9cb1}\index{ansi::manipulators::scroll@{ansi::manipulators::scroll}!down@{down}}
+\index{down@{down}!ansi::manipulators::scroll@{ansi::manipulators::scroll}}
+\doxysubsubsection{\texorpdfstring{down()}{down()}}
+{\footnotesize\ttfamily \label{namespaceansi_1_1manipulators_1_1scroll_a11e41a6ff39984718e565955718e9cb1} 
+auto ansi\+::manipulators\+::scroll\+::down (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{namespaceansi_a47fab9a98312717efcc626515c474df9}{byte}}}]{lines}{ = {\ttfamily 1}}\end{DoxyParamCaption}) -\/$>$ \mbox{\hyperlink{structansi_1_1csi}{csi}}$<$1$>$ \hspace{0.3cm}{\ttfamily [constexpr]}}
+
+
+
+Scrolls page down. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em lines} & Number of lines to scroll down by. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+CSI representing the {\itshape scroll down} action. 
+\end{DoxyReturn}
+\Hypertarget{namespaceansi_1_1manipulators_1_1scroll_a7fca3a2c5203d528e27aad24bc6c353e}\index{ansi::manipulators::scroll@{ansi::manipulators::scroll}!up@{up}}
+\index{up@{up}!ansi::manipulators::scroll@{ansi::manipulators::scroll}}
+\doxysubsubsection{\texorpdfstring{up()}{up()}}
+{\footnotesize\ttfamily \label{namespaceansi_1_1manipulators_1_1scroll_a7fca3a2c5203d528e27aad24bc6c353e} 
+auto ansi\+::manipulators\+::scroll\+::up (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{namespaceansi_a47fab9a98312717efcc626515c474df9}{byte}}}]{lines}{ = {\ttfamily 1}}\end{DoxyParamCaption}) -\/$>$ \mbox{\hyperlink{structansi_1_1csi}{csi}}$<$1$>$ \hspace{0.3cm}{\ttfamily [constexpr]}}
+
+
+
+Scrolls page up. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em lines} & Number of lines to scroll up by. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+CSI representing the {\itshape scroll up} action. 
+\end{DoxyReturn}

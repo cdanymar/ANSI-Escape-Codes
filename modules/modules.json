@@ -1,0 +1,8 @@
+﻿{
+    "version": 1,
+    "revision": 0,
+    "library": "cdanymar/ANSI",
+    "module-sources": [
+        "ansi.ixx"
+    ]
+}

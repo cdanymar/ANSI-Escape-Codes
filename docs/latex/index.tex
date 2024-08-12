@@ -1,0 +1,75 @@
+\chapter{ANSI}
+\hypertarget{index}{}\label{index}\index{ANSI@{ANSI}}
+\label{index_md__d_1_2_rider_projects_2_a_n_s_i_01_escape_01_codes_2_a_n_s_i_2readme}%
+\Hypertarget{index_md__d_1_2_rider_projects_2_a_n_s_i_01_escape_01_codes_2_a_n_s_i_2readme}%
+ \label{index_readme-top}%
+\Hypertarget{index_readme-top}%
+
+
+ \doxysection*{ANSI Escape Codes}
+
+ 
+
+A C/\+C++ utility for formatting output in a neat way.
+
+ 
+
+ \href{}{\texttt{  }} \href{https://github.com/cdanymar1/ANSI-Escape-Codes/network/members}{\texttt{  }} \href{https://github.com/cdanymar1/ANSI-Escape-Codese/stargazers}{\texttt{  }} ~\newline
+ \href{https://github.com/cdanymar1/ANSI-Escape-Codes/issues/}{\texttt{  }} \href{https://github.com/cdanymar1/ANSI-Escape-Codes/blob/master/LICENSE}{\texttt{  }}  
+
+ \doxysubsubsubsection*{\href{https://github.com/Louis3797/awesome-readme-template/}{\texttt{ Examples}}  ·  \href{https://github.com/Louis3797/awesome-readme-template}{\texttt{ Documentation}}  ·  \href{https://github.com/Louis3797/awesome-readme-template/issues/}{\texttt{ Report Bug}}  ·  \href{https://github.com/Louis3797/awesome-readme-template/issues/}{\texttt{ Request Feature}} }
+
+  ~\newline
+ 
+
+{\bfseries{Table of Contents}}\begin{adjustwidth}{1em}{0em}
+
+\begin{DoxyEnumerate}
+\item \href{\#about}{\texttt{ About}}  
+\item \href{\#getting-started}{\texttt{ Getting Started}}  
+\item \href{\#usage}{\texttt{ Usage}} 
+\item \href{\#license}{\texttt{ License}} 
+\item \href{\#acknowledgments}{\texttt{ Acknowledgments}} 
+\end{DoxyEnumerate}\end{adjustwidth}
+\hypertarget{index_autotoc_md0}{}\doxysubsection{\texorpdfstring{About}{About}}\label{index_autotoc_md0}
+This library provides a neat way for formatting text, manipulating caret and display using output streams and the ANSI escape sequences. Additionally, it includes functions for Unicode output in the standard output stream.
+
+Alternatively it has macros that can be used similarly in both C and C++.
+
+(\href{\#readme-top}{\texttt{ back to top}})\hypertarget{index_autotoc_md1}{}\doxysubsection{\texorpdfstring{Getting Started}{Getting Started}}\label{index_autotoc_md1}
+You can download this library as a single source file for C++ or a single header file with macros for C.
+
+If you are using Windows Command Prompt as your default terminal application, you may use the scripts for enabling virtual terminal to have all the ANSI sequences executed.
+
+(\href{\#readme-top}{\texttt{ back to top}})\hypertarget{index_autotoc_md2}{}\doxysubsection{\texorpdfstring{Usage}{Usage}}\label{index_autotoc_md2}
+To use this library in your project it must support C++23 features such as {\ttfamily std\+::vprint\+\_\+unicode()} and the named standard library module {\ttfamily std}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\ ++}
+\DoxyCodeLine{\textcolor{keyword}{import}\ \mbox{\hyperlink{module__ansi}{ansi}};}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{keyword}{using\ namespace\ }\mbox{\hyperlink{namespaceansi_1_1manipulators}{ansi::manipulators}};}
+
+\end{DoxyCode}
+
+
+Import the library as a module, and it is recommended to have the using-\/namespace clause for the ease of use and readability.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\ ++}
+\DoxyCodeLine{ansi::println<fg::rgb(121,\ 32,\ 21),\ text::underline>(\textcolor{stringliteral}{"{}My\ red\ underlined\ text."{}});}
+
+\end{DoxyCode}
+
+
+It includes a function for standard output based on the C++26 syntax for {\ttfamily std\+::println}, but with additional support for styles passed as template arguments.
+
+(\href{\#readme-top}{\texttt{ back to top}})\hypertarget{index_autotoc_md3}{}\doxysubsection{\texorpdfstring{License}{License}}\label{index_autotoc_md3}
+This library is under \href{https://github.com/cdanymar1/ANSI-Escape-Codes/blob/master/LICENSE}{\texttt{ MIT license}}. 
+
+(\href{\#readme-top}{\texttt{ back to top}})\hypertarget{index_autotoc_md4}{}\doxysubsection{\texorpdfstring{Acknowledgments}{Acknowledgments}}\label{index_autotoc_md4}
+The project in inspired by the \href{https://en.wikipedia.org/wiki/ANSI_escape_code}{\texttt{ Wikipedia page}} of the ANSI escape sequences. 
+
+(\href{\#readme-top}{\texttt{ back to top}})

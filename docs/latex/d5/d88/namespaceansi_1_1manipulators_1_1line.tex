@@ -1,0 +1,56 @@
+\doxysection{ansi\+::manipulators\+::line Namespace Reference}
+\hypertarget{namespaceansi_1_1manipulators_1_1line}{}\label{namespaceansi_1_1manipulators_1_1line}\index{ansi::manipulators::line@{ansi::manipulators::line}}
+
+
+Line movement.  
+
+
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+constexpr auto \mbox{\hyperlink{namespaceansi_1_1manipulators_1_1line_a701154eceac03a37202a9362fc847fed}{next}} (const \mbox{\hyperlink{namespaceansi_a47fab9a98312717efcc626515c474df9}{byte}} lines=1) -\/$>$ \mbox{\hyperlink{structansi_1_1csi}{csi}}$<$ 1 $>$
+\begin{DoxyCompactList}\small\item\em Moves caret to the beginning of the next line. \end{DoxyCompactList}\item 
+constexpr auto \mbox{\hyperlink{namespaceansi_1_1manipulators_1_1line_afcd53f9179c97483cbdb05b4b73e3ad4}{prev}} (const \mbox{\hyperlink{namespaceansi_a47fab9a98312717efcc626515c474df9}{byte}} lines=1) -\/$>$ \mbox{\hyperlink{structansi_1_1csi}{csi}}$<$ 1 $>$
+\begin{DoxyCompactList}\small\item\em Moves caret to the beginning of the previous line. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Line movement. 
+
+\doxysubsection{Function Documentation}
+\Hypertarget{namespaceansi_1_1manipulators_1_1line_a701154eceac03a37202a9362fc847fed}\index{ansi::manipulators::line@{ansi::manipulators::line}!next@{next}}
+\index{next@{next}!ansi::manipulators::line@{ansi::manipulators::line}}
+\doxysubsubsection{\texorpdfstring{next()}{next()}}
+{\footnotesize\ttfamily \label{namespaceansi_1_1manipulators_1_1line_a701154eceac03a37202a9362fc847fed} 
+auto ansi\+::manipulators\+::line\+::next (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{namespaceansi_a47fab9a98312717efcc626515c474df9}{byte}}}]{lines}{ = {\ttfamily 1}}\end{DoxyParamCaption}) -\/$>$ \mbox{\hyperlink{structansi_1_1csi}{csi}}$<$1$>$ \hspace{0.3cm}{\ttfamily [constexpr]}}
+
+
+
+Moves caret to the beginning of the next line. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em lines} & Number of lines to go down. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+CSI representing the {\itshape next line} action. 
+\end{DoxyReturn}
+\Hypertarget{namespaceansi_1_1manipulators_1_1line_afcd53f9179c97483cbdb05b4b73e3ad4}\index{ansi::manipulators::line@{ansi::manipulators::line}!prev@{prev}}
+\index{prev@{prev}!ansi::manipulators::line@{ansi::manipulators::line}}
+\doxysubsubsection{\texorpdfstring{prev()}{prev()}}
+{\footnotesize\ttfamily \label{namespaceansi_1_1manipulators_1_1line_afcd53f9179c97483cbdb05b4b73e3ad4} 
+auto ansi\+::manipulators\+::line\+::prev (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{namespaceansi_a47fab9a98312717efcc626515c474df9}{byte}}}]{lines}{ = {\ttfamily 1}}\end{DoxyParamCaption}) -\/$>$ \mbox{\hyperlink{structansi_1_1csi}{csi}}$<$1$>$ \hspace{0.3cm}{\ttfamily [constexpr]}}
+
+
+
+Moves caret to the beginning of the previous line. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em lines} & Number of lines to go up. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+CSI representing the {\itshape previous line} action. 
+\end{DoxyReturn}
