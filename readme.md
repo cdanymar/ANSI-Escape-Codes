@@ -23,13 +23,13 @@
         <img src="https://custom-icon-badges.demolab.com/badge/ISO-23-blue?logo=cplusplus" alt="C++ ISO">
     </p>
     <h4>
-        <a href="https://github.com/Louis3797/awesome-readme-template/">Examples</a>
+        <a href="https://github.com/cdanymar1/ANSI-Escape-Codes/tree/master/example">Examples</a>
         <span> · </span>
-        <a href="https://github.com/Louis3797/awesome-readme-template">Documentation</a>
+        <a href="https://github.com/cdanymar1/ANSI-Escape-Codes/tree/master/docs">Documentation</a>
         <span> · </span>
-        <a href="https://github.com/Louis3797/awesome-readme-template/issues/">Report Bug</a>
+        <a href="https://github.com/cdanymar1/ANSI-Escape-Codes/issues">Report Bug</a>
         <span> · </span>
-        <a href="https://github.com/Louis3797/awesome-readme-template/issues/">Request Feature</a>
+        <a href="https://github.com/cdanymar1/ANSI-Escape-Codes/issues">Request Feature</a>
     </h4>
 </div>
 <br>
