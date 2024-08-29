@@ -1,3 +1,9 @@
+/// @file ansi.ixx
+/// @author Danylo Marchenko (cdanymar)
+/// @brief Modular wrapper for ANSI.
+/// @version 1.0
+/// @date 2024-08-29
+/// @copyright Copyright (c) 2024
 export module ansi;
 
 export import <cansi>;
